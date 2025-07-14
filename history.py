@@ -24,7 +24,10 @@ def get_history_for_langchain(session_id: str) -> InMemoryChatMessageHistory:
     return history
 
 llm_com_memoria = RunnableWithMessageHistory(
-    RunnableLambda(lambda d: llm.invoke(d.get("history", []) + d["messages"])),
+    RunnableLambda(lambda d: llm.invoke([
+        msg for msg in d.get("history", []) + d["messages"] 
+        if getattr(msg, "content", None) and msg.content.strip() != ""])
+    ),
     get_history_for_langchain,
     input_messages_key="messages",
     history_messages_key="history"

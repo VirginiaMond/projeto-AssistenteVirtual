@@ -63,6 +63,9 @@ def iniciar_chat_terminal():
         if human_message_content:
             mensagens.append(HumanMessage(content=human_message_content))
         
+        # Filtro para remover mensagens vazias (protegendo o Gemini)
+        mensagens = [msg for msg in mensagens if msg.content and msg.content.strip()]
+
         try:
             resposta = llm_com_memoria.invoke(
                 {"messages": mensagens},
@@ -96,11 +99,17 @@ def iniciar_chat_terminal():
 
         dados_completos = origem and destino and data
 
-        if dados_completos and finalidade == "trabalho" and not awaiting_search_confirmation:
-            print("BOT: Tenho todos os dados para sua viagem a trabalho. Deseja que eu realize a busca agora? (sim/não)")
-            awaiting_search_confirmation = True
-            salvar_memoria(memoria)
-            continue
+        if dados_completos and not awaiting_search_confirmation:
+            if    finalidade == "trabalho": 
+                print("BOT: Tenho todos os dados para sua viagem a trabalho. Deseja que eu realize a busca agora? (sim/não)")
+                awaiting_search_confirmation = True
+                salvar_memoria(memoria)
+                continue
+            elif finalidade == "lazer":
+                print("BOT: Que legal! Sua viagem a lazer está quase toda definida. Quando quiser, posso ajudar a buscar as passagens. É só me avisar!")
+            # não ativa a busca automática
+                salvar_memoria(memoria)
+                continue
         elif deve_buscar_passagem(entrada) and not awaiting_search_confirmation:
             executar_agente(entrada, usuario, agente_passagens)
     

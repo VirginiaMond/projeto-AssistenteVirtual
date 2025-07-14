@@ -15,7 +15,7 @@ class BuscaPassagensInput(BaseModel):
 def criar_agente(llm, usuario):
     ferramentas = [
         StructuredTool.from_function(
-            func=buscar_passagens, 
+            func=buscar_passagens, #chama a API
             name="BuscaPassagens",
             # DESCRIÇÃO CRÍTICA: Guia o LLM a extrair os argumentos corretos
             description="""

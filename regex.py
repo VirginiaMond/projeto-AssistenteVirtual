@@ -8,7 +8,7 @@ def atualizar_dados_usuario(entrada: str, usuario):
     # Garante que todas as chaves estão presentes
     default_user_preferences = {
         "origem": None, "destino": None, "dia": None,
-        "viagem": None, "preferencias": [], "restricoes": []
+        "finalidade": None, "preferencias": [], "restricoes": []
     }
 
     if not dados_usuario:
@@ -56,18 +56,13 @@ def atualizar_dados_usuario(entrada: str, usuario):
         if len(origem.split()) <= 4 and origem:
             dados_usuario["origem"] = origem
             print(f"DEBUG: Origem atualizada (início da frase) para '{dados_usuario['origem']}'")
-
-    # Tipo de Viagem
-    match_viagem = re.search(r"(?:a|para|viagem é)\s+(trabalho|lazer|aventura|negócios|turismo)", entrada.lower())
-    if match_viagem:
-        dados_usuario["viagem"] = match_viagem.group(1).strip()
-        print(f"DEBUG: Tipo de viagem atualizado para '{dados_usuario['viagem']}'")
-
+   
     # Preferência de clima
     if "frio" in entrada.lower() and "gosta de clima frio" not in dados_usuario["preferencias"]:
         dados_usuario["preferencias"].append("gosta de clima frio")
         print(f"DEBUG: Preferência 'gosta de clima frio' adicionada.")
-   
+    
+    #finalidade de viagem
     match_finalidade = re.search(PADRAO_FINALIDADE, entrada.lower())
     if match_finalidade:
         finalidade_extraida = match_finalidade.group(0)
@@ -75,5 +70,6 @@ def atualizar_dados_usuario(entrada: str, usuario):
             dados_usuario['finalidade'] = "trabalho"
         elif "lazer" in finalidade_extraida:
             dados_usuario['finalidade'] = "lazer"
+        print(f"DEBUG: Finalidade atualizada para '{dados_usuario['finalidade']}'")
 
     return dados_usuario

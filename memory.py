@@ -67,9 +67,9 @@ def obter_ou_criar_usuario(username, memoria):
             preferencias={
                 "clima": None,
                 "lugares": [],
-                "tipo": None,
                 "restricoes": [],
-                "finalidade": None
+                "finalidade": None,
+                "preferencias": []
             }, 
             chat_history=[]
         )
