@@ -4,16 +4,16 @@ from langchain.tools import Tool, StructuredTool
 from tools.viagens_api import buscar_passagens
 from config.settings import llm
 from langchain_core.messages import SystemMessage, HumanMessage
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field #validar oque a ferramenta(tool) espera receber
 
 class BuscaPassagensInput(BaseModel):
     origem: str = Field(description="A cidade ou aeroporto de partida do voo. Ex: 'São Luís', 'GRU'.")
     destino: str = Field(description="A cidade ou aeroporto de chegada do voo. Ex: 'São Paulo', 'SDU'.")
     data: str = Field(description="A data da viagem (ida).")
 
-
+#cria o agente especializado em passagens
 def criar_agente(llm, usuario):
-    ferramentas = [
+    ferramentas = [ #criação da ferramenta BuscaPassagens
         StructuredTool.from_function(
             func=buscar_passagens, #chama a API
             name="BuscaPassagens",
@@ -28,26 +28,27 @@ def criar_agente(llm, usuario):
             - 'data' (str): A data da viagem (ida). 
             **Instruções para extrair os parâmetros:**
             Você receberá um 'input' que pode conter as informações formatadas como 'Origem: [valor]', 'Destino: [valor]', 'Data: [valor]' ou na forma de texto livre.
-            1.  Primeiro, procure por "Origem: " ou "de " na entrada para identificar o 'origem'.
-            2.  Em seguida, procure por "Destino: " ou "para " para identificar o 'destino'.
+            1.  Primeiro, procure por "Origem: " ou nome de lugares com aeroporto na entrada para identificar o 'origem'.
+            2.  Em seguida, procure por "Destino: " ou nome de lugares com aeroporto para identificar o 'destino'.
             3.  Finalmente, procure por "Data: " ou "dia " para identificar a 'data'.
             4.  **Se alguma dessas informações (origem, destino, data) estiver faltando ou for ambígua/inválida:**
             NÃO chame a ferramenta. Em vez disso, retorne a string "ERRO_BUSCA_PASSAGENS:[liste_aqui_os_campos_faltando_separados_por_virgula]".
             Exemplo: Se faltar origem e data, retorne "ERRO_BUSCA_PASSAGENS:origem,data".          
            """,
-            args_schema=BuscaPassagensInput
+            args_schema=BuscaPassagensInput, #garante obrigatoriedade
+            return_direct=True
         )
     ]
 
-    agent = initialize_agent(
+    agent = initialize_agent( #inicializa o agente com ferramenta
         tools=ferramentas,
         llm=llm,
-        agent=AgentType.OPENAI_FUNCTIONS,
-        verbose=True,
+        agent=AgentType.OPENAI_FUNCTIONS, # Usa o modelo no estilo "function calling"
+        verbose=True, # Exibe logs no terminal
         agent_kwargs={
             "system_message": SystemMessage(content="""
             Você é um agente de software especializado em extrair informações de viagem e chamar a ferramenta 'BuscaPassagens'.
-            Sua única tarefa é analisar o 'input' fornecido, extrair a Origem, Destino e Data da viagem.
+            Sua única tarefa é analisar o 'input' fornecido, extrair a Origem, Destino e Data da viagem e retornar a resposta.
 
             **Procedimento Rigoroso:**
             1.  Analise o 'input' fornecido. O input pode conter informações já extraídas e formatadas ou texto livre do usuário.

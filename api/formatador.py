@@ -1,3 +1,6 @@
+#código antigo que era somente a API Amadeus
+#usado o formatar_voo()
+
 TAXA_CAMBIO_EUR_BRL = 6.3  # mudar isso depois
 from datetime import datetime
 # Mapeamento de códigos de companhias aéreas para nomes completos
@@ -91,7 +94,7 @@ MAPEAMENTO_AERONAVES = {
     "CS3": "Airbus A220-300"
 }
 
-def formatar_aeronave(codigo, companhia=None):
+def formatar_aeronave(codigo, companhia=None): #retorna o nome do modelo da aeronave a partir do código.
     if not codigo or codigo == "N/A":
         return "Modelo não especificado"
     
@@ -115,9 +118,9 @@ def formatar_companhia(codigo):
     """Formata o código da companhia aérea para o nome completo"""
     return MAPEAMENTO_COMPANHIAS.get(codigo, codigo)  # Retorna o código se não encontrar no mapeamento
 
-def formatar_voo(voos_data: list) -> list:
+def formatar_voo(voos_data: list) -> list: #funçao usada para formatar os voos.
     voos_formatados = []
-    if not isinstance(voos_data, list):
+    if not isinstance(voos_data, list): #verifica se a entrada é uma lista
         print(f"ERRO_FORMATADOR: Entrada inesperada para formatar_voo. Esperado lista, recebido: {type(voos_data)} - {voos_data}")
         # Retorna uma mensagem de erro que pode ser usada pelo chatbot
         return [{"erro": "Erro interno ao formatar dados de voo: formato inesperado."}]
@@ -143,7 +146,7 @@ def formatar_voo(voos_data: list) -> list:
                 print(f"WARNING_FORMATADOR: Segmentos ausentes para voo no índice {idx}. Voo: {voo}")
                 voos_formatados.append({"erro": f"Erro ao formatar voo {idx+1}: segmentos de voo não encontrados."})
                 continue
-
+            #infos basicas dos voos
             primeiro_segmento = segmentos[0]
             ultimo_segmento = segmentos[-1]
 
@@ -169,7 +172,7 @@ def formatar_voo(voos_data: list) -> list:
 
             duracao_iso = itinerario.get("duration", "N/A")
             duracao = duracao_iso.replace("PT", "").lower().replace("h", "h").replace("m", "m") if duracao_iso != "N/A" else "N/A"
-
+            #quantidade de escalas
             escalas = len(segmentos) - 1
             if escalas == 0:
                 texto_escalas = "Direto"

@@ -1,25 +1,28 @@
 import re
 
-PADRAO_FINALIDADE = r"(?:viagem\s+)?(?:a\s+trabalho|de\s+lazer|trabalho|lazer)"
-
+PADRAO_FINALIDADE = r"(?:viagem\s+)?(a\s+trabalho|de\s+lazer|trabalho|lazer)"
+#---função principal que atualiza os dados do usuário com base na entrada de texto
 def atualizar_dados_usuario(entrada: str, usuario):
-    dados_usuario = usuario.preferencias
-    # Em regex.py, dentro de atualizar_dados_usuario
+    dados_usuario = usuario.dadosviagem #acesso ao dicionario
+    
     # Garante que todas as chaves estão presentes
-    default_user_preferences = {
-        "origem": None, "destino": None, "dia": None,
-        "finalidade": None, "preferencias": [], "restricoes": []
+    default_user_dados = {
+        "origem": None, 
+        "destino": None, 
+        "dia": None
     }
-
+    # se nao possuir dados, cria
     if not dados_usuario:
-        usuario.preferencias = default_user_preferences.copy()
+        usuario.dadosviagem = default_user_dados.copy()
     else:
-        for key, default_value in default_user_preferences.items():
+        #para cada chave esperada, verifica se está presente e válida
+        for key, default_value in default_user_dados.items():
             if key not in dados_usuario:
                 dados_usuario[key] = default_value
+            #corrige caso uma chave que deveria ser lista venha diferente
             elif isinstance(default_value, list) and not isinstance(dados_usuario[key], list):
                 dados_usuario[key] = []
-
+    #processamento do nome (extração)
     match_name = re.search(r"(?:meu nome é|eu sou|pode me chamar de|sou)\s+([a-zA-ZÀ-ÿ\s]+)", entrada.lower())
     if match_name:
         nome_extraido = match_name.group(1).strip().title()
@@ -27,7 +30,7 @@ def atualizar_dados_usuario(entrada: str, usuario):
             usuario.nome = nome_extraido
             print(f"DEBUG: Nome do usuário atualizado para '{usuario.nome}'")
 
-    # Dia
+    # Dia/data
     match_dia = re.search(r"(?:dia|em)\s+(\d{1,2}(?:\s+de\s+[a-zA-Zà-ú]+){1,2}(?:\s+de\s+\d{4})?)", entrada.lower())
     if match_dia:
         dados_usuario["dia"] = match_dia.group(1).strip()
@@ -51,25 +54,26 @@ def atualizar_dados_usuario(entrada: str, usuario):
         if len(origem.split()) <= 4:
             dados_usuario["origem"] = origem
             print(f"DEBUG: Origem atualizada para '{dados_usuario['origem']}'")
+    #caso origem esteja no inicio da frase
     elif not dados_usuario["origem"] and re.match(r"^([a-zA-ZÀ-ÿ\s]+?),\s*(?:dia|em|para)", entrada.lower()):
         origem = re.match(r"^([a-zA-ZÀ-ÿ\s]+?),\s*(?:dia|em|para)", entrada.lower()).group(1).strip().title()
         if len(origem.split()) <= 4 and origem:
             dados_usuario["origem"] = origem
             print(f"DEBUG: Origem atualizada (início da frase) para '{dados_usuario['origem']}'")
-   
-    # Preferência de clima
-    if "frio" in entrada.lower() and "gosta de clima frio" not in dados_usuario["preferencias"]:
-        dados_usuario["preferencias"].append("gosta de clima frio")
-        print(f"DEBUG: Preferência 'gosta de clima frio' adicionada.")
     
     #finalidade de viagem
     match_finalidade = re.search(PADRAO_FINALIDADE, entrada.lower())
     if match_finalidade:
-        finalidade_extraida = match_finalidade.group(0)
+        finalidade_extraida = match_finalidade.group(1).lower()
+        
         if "trabalho" in finalidade_extraida:
-            dados_usuario['finalidade'] = "trabalho"
+            usuario.finalidade = "trabalho"
         elif "lazer" in finalidade_extraida:
-            dados_usuario['finalidade'] = "lazer"
-        print(f"DEBUG: Finalidade atualizada para '{dados_usuario['finalidade']}'")
+            usuario.finalidade = "lazer"
+        print(f"DEBUG: Finalidade extraída: '{finalidade_extraida}', Definida como: '{usuario.finalidade}'")
+       
+    else:
+        print("DEBUG: Nenhuma finalidade identificada na entrada")
+
 
     return dados_usuario

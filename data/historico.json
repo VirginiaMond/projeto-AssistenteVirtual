@@ -1,90 +1,117 @@
 {
-  "virginia": {
-    "nome": "virginia",
-    "preferencias": {
-      "clima": null,
-      "lugares": [],
-      "tipo": null,
-      "restricoes": [],
-      "finalidade": "trabalho",
-      "origem": "São Luis",
+  "Vih": {
+    "nome": "Vih",
+    "finalidade": "trabalho",
+    "dados": {
+      "origem": "Sao Luis",
       "destino": "São Paulo",
-      "dia": "20 de julho",
-      "viagem": "trabalho",
-      "preferencias": []
+      "dia": "08 de setembro de 2025"
+    },
+    "preferencias": {
+      "clima": null
     },
     "chat_history": [
       {
         "type": "human",
-        "content": "Olá"
+        "content": "Oii"
       },
       {
         "type": "ai",
-        "content": "Olá! Que bom te ver por aqui! Eu sou o Botfly, seu assistente de viagens pessoal, e estou super animado para te ajudar a encontrar a viagem dos seus sonhos.\n\nPara começarmos, para onde você está pensando em ir? Me conta! 😊"
+        "content": "Oii! Que legal ter você por aqui! Eu sou o Mochi, seu assistente de viagens super amigável. 😊\n\nComo posso te ajudar a planejar sua próxima aventura hoje? Me conta, para onde você está pensando em ir?"
       },
       {
         "type": "human",
-        "content": "quero ir para são paulo"
+        "content": "para são paulo"
       },
       {
         "type": "ai",
-        "content": "Que legal, **São Paulo** é um destino incrível! Já anotei aqui que você quer ir pra lá.\n\nPara eu te ajudar a encontrar as melhores opções, de qual cidade você gostaria de sair? E qual seria a data da sua viagem, ou pelo menos um período, tipo \"mês que vem\" ou \"em julho\"?"
+        "content": "Ah, São Paulo! Uma cidade incrível, cheia de vida e com mil coisas para fazer!\n\nPara onde você está pensando em sair para ir até lá? E qual a data da sua viagem? Assim consigo te ajudar a encontrar as melhores opções! 😊"
       },
       {
         "type": "human",
-        "content": "de são luis, dia 20 de julho"
+        "content": "de são luis"
       },
       {
         "type": "ai",
-        "content": "Ah, entendi! Então você quer voar de São Luís no dia 20 de julho. Ótimo!\n\nPelo que vejo aqui, seu destino é São Paulo, certo? E essa viagem seria só de ida ou você já tem uma data para a volta? Me conta aí! 😊"
+        "content": "Ah, São Luís! Que legal! Já anotei aqui que a sua origem é São Luís. E o destino é São Paulo, certo?\n\nPara quando você está pensando em viajar? Assim consigo te ajudar a encontrar as melhores opções! 😊"
       },
       {
         "type": "human",
-        "content": "só ida"
+        "content": "dia 08 de setembro de 2025"
       },
       {
         "type": "ai",
-        "content": "Ah, entendi! Então é uma viagem só de ida para São Paulo no dia 20 de julho, saindo de São Luís. Perfeito!\n\nPara eu conseguir buscar as melhores opções para você, só preciso de mais uma informação: quantas pessoas vão viajar?"
+        "content": "Ah, entendi! Então a viagem para São Paulo será no dia 08 de setembro de 2025, saindo de Set. Anotado!\n\nPara te ajudar a encontrar as melhores opções, você já sabe qual é a finalidade da sua viagem? É a trabalho, lazer, visitar alguém? E tem alguma preferência, tipo horário, companhia aérea ou se prefere voo direto? Me conta um pouquinho mais! 😊"
       },
       {
         "type": "human",
-        "content": "somente eu"
+        "content": "de sao luis"
       },
       {
         "type": "ai",
-        "content": "Ah, entendi! Então é uma viagem para uma pessoa só, certo? Perfeito!\n\nAgora que sei que é só você, me diz uma coisa: essa viagem para São Paulo no dia 20 de julho é só de ida ou você já tem uma data de volta em mente?"
+        "content": "Ah, entendi! Então, a sua viagem será de São Luís mesmo, com destino a São Paulo no dia 8 de setembro de 2025.\n\nPara eu te ajudar a encontrar as melhores opções, você já tem alguma ideia da finalidade da sua viagem? É a trabalho, lazer, visitar alguém? E tem alguma preferência de horário ou companhia aérea? Assim consigo refinar a busca! 😊"
       },
       {
         "type": "human",
-        "content": "só ida"
+        "content": "a trabalho, clima quente"
       },
       {
         "type": "ai",
-        "content": "Ah, entendi! Então a sua viagem para São Paulo no dia 20 de julho será só de ida, saindo de São Luís. Ótimo!\n\nCom essas informações, já tenho quase tudo para começar a procurar as melhores opções para você. Só me diz uma coisa: você tem alguma preferência de horário, companhia aérea ou se o voo precisa ser direto? Ou posso procurar as melhores opções em geral?"
+        "content": "Ah, entendi! Então a viagem para São Paulo no dia 8 de setembro de 2025 é a trabalho, e você prefere um clima mais quentinho, certo? Anotado!\n\nCom a origem em São Luís, destino São Paulo, data de 8 de setembro e finalidade de trabalho, e agora com a sua preferência por clima quente, já temos bastante coisa!\n\nTem mais algum detalhe que você gostaria de adicionar antes de eu começar a procurar as melhores opções de voos para você?"
       },
       {
         "type": "human",
-        "content": "sem preferencias"
+        "content": "Oi"
       },
       {
         "type": "ai",
-        "content": "Ah, entendi, sem preferências! Ótimo, isso me dá bastante liberdade para encontrar as melhores opções para você, [Nome do Usuário, se disponível, senão omitir].\n\nEntão, só para confirmar, você está procurando uma viagem de São Luís para São Paulo no dia 20 de julho, sem nenhuma preferência específica de companhia aérea, horários ou escalas, certo?\n\nE me diz uma coisa, essa viagem é só de ida ou você já tem uma data de volta em mente?"
+        "content": "Oi de novo! 😊\n\nQue bom que você está por aqui! Vi que você resumiu as informações, muito obrigado!\n\nEntão, só para confirmar e ter certeza que está tudo certinho:\n\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 08 de setembro de 2025\n*   **Finalidade:** Viagem a trabalho\n\nSobre as preferências, você tinha me falado que preferia um clima mais quentinho. Isso ainda se mantém ou não tem uma preferência específica agora?\n\nCom essas informações, já consigo acionar o agente para buscar as melhores passagens para você! Posso seguir em frente?"
+      }
+    ]
+  },
+  "kaka": {
+    "nome": "kaka",
+    "finalidade": "trabalho",
+    "dados": {
+      "origem": "Sao Luis",
+      "destino": "São Paulo",
+      "dia": "09 de agosto de 2025"
+    },
+    "preferencias": {
+      "clima": null
+    },
+    "chat_history": [
+      {
+        "type": "human",
+        "content": "oii"
+      },
+      {
+        "type": "ai",
+        "content": "Oii! Que bom te ver por aqui! Eu sou o Mochi, seu assistente de viagens. Estou super animado para te ajudar a encontrar a viagem perfeita.\n\nPara começarmos, me conta: para onde você está pensando em ir? E de onde você vai sair? 😊"
       },
       {
         "type": "human",
-        "content": "sim, só ida"
+        "content": "para são paulo"
       },
       {
         "type": "ai",
-        "content": "Perfeito, entendi! Então, sua viagem é de **São Luís para São Paulo no dia 20 de julho, só de ida**.\n\nCom essas informações, já consigo começar a procurar as passagens para você! Só me diz mais uma coisa: quantas pessoas vão viajar? Assim já busco o número certinho de assentos. 😊"
+        "content": "Ah, São Paulo! Que legal! É uma cidade incrível, cheia de coisas pra fazer.\n\nPra eu te ajudar a encontrar a melhor viagem, preciso saber de onde você vai sair. De qual cidade você está partindo? E quando você planeja ir para São Paulo? 😊"
       },
       {
         "type": "human",
-        "content": "1"
+        "content": "de sao luis"
       },
       {
         "type": "ai",
-        "content": "Olá! Que bom que você está planejando sua viagem de São Luís para São Paulo no dia 20 de julho!\n\nPara eu te ajudar a encontrar as melhores opções, você prefere uma passagem só de ida ou ida e volta? E tem alguma preferência de horário ou companhia aérea?"
+        "content": "Ah, São Luís! Que maravilha! Já anotei aqui que sua viagem começa de lá.\n\nE para onde você está pensando em ir dessa vez? Me conta! 😊"
+      },
+      {
+        "type": "human",
+        "content": "dia 09 de agosto de 2025"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, perfeito! Dia 09 de agosto de 2025, então. Anotadíssimo!\n\nCom a data confirmada, São Luís para São Paulo, me diz uma coisa: você já tem alguma ideia do motivo da viagem? É a trabalho, lazer, visitar alguém? Saber disso pode me ajudar a encontrar as melhores opções para você! 😊"
       },
       {
         "type": "human",
@@ -92,7 +119,163 @@
       },
       {
         "type": "ai",
-        "content": "Entendi, então sua viagem de São Luís para São Paulo no dia 20 de julho é a trabalho! Perfeito.\n\nPara eu começar a procurar as melhores opções para você, me diz uma coisa: essa viagem é só de ida ou você já tem uma data para voltar? E quantas pessoas vão viajar?"
+        "content": "Ah, entendi! Então a finalidade da sua viagem para São Paulo é a trabalho. Perfeito!\n\nDeixa eu só confirmar se peguei tudo direitinho:\n\nVocê está saindo de **São Luís** com destino a **São Paulo**, no dia **9 de agosto de 2025**, e a viagem é **a trabalho**. Certo?\n\nSe estiver tudo certinho, já posso acionar o meu sistema para buscar as melhores opções de passagens para você! O que me diz? 😊"
+      }
+    ]
+  },
+  "Vika": {
+    "nome": "Vika",
+    "finalidade": "trabalho",
+    "dados": {
+      "origem": "São Luis",
+      "destino": "São Paulo",
+      "dia": "08 de agosto de 2025"
+    },
+    "preferencias": {
+      "clima": null
+    },
+    "chat_history": [
+      {
+        "type": "human",
+        "content": "olá"
+      },
+      {
+        "type": "ai",
+        "content": "Olá! Que bom te ver por aqui! Eu sou o Mochi, seu assistente de viagens pessoal. Estou super animado para te ajudar a encontrar a viagem perfeita!\n\nPara começarmos, qual é o seu nome? Assim posso te chamar direitinho! 😊"
+      },
+      {
+        "type": "human",
+        "content": "Virginia"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, Virginia! Que nome lindo!\n\nÉ um prazer te conhecer, Virginia! Eu sou o Mochi, seu assistente de viagens. 😊\n\nPelo que entendi, você está pensando em viajar, certo? Virginia seria o seu destino dos sonhos ou você está procurando por algo mais específico? Me conta um pouquinho mais para eu poder te ajudar a encontrar a viagem perfeita!"
+      },
+      {
+        "type": "human",
+        "content": "para são paulo"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, São Paulo! Que legal! É uma cidade incrível, cheia de opções para todos os gostos.\n\nPara eu te ajudar a encontrar as melhores passagens, de onde você gostaria de partir? E para quando seria essa viagem? 😊"
+      },
+      {
+        "type": "human",
+        "content": "de são luis"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, São Luís! Que ótimo ponto de partida!\n\nE para onde você está pensando em ir? Qual seria o seu destino? 😊"
+      },
+      {
+        "type": "human",
+        "content": "dia 08 de agosto"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, entendi! Então, a data de partida é 08 de agosto. Ótimo!\n\nSó para confirmar, você me disse que a origem é \"Agosto\", mas acho que houve um pequeno engano, pois \"Agosto\" é um mês, não uma cidade. De qual cidade você gostaria de partir para São Paulo? Assim consigo te ajudar melhor a encontrar as passagens! 😊"
+      },
+      {
+        "type": "human",
+        "content": "dia 08 de agosto de 2025"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, entendi! Dia 8 de agosto de 2025, perfeito!\n\nSó para confirmar, a sua cidade de origem seria \"Agosto\" mesmo, ou você quis dizer outra cidade? É que \"Agosto\" é um mês, e preciso saber de qual cidade você vai partir para São Paulo. 😊"
+      },
+      {
+        "type": "human",
+        "content": "de são luis"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, São Luís! Que ótimo ponto de partida! ✈️\n\nEntão, sua viagem começa em São Luís, certo? E para onde você está pensando em ir? Me conta! 😊"
+      },
+      {
+        "type": "human",
+        "content": "para são paulo"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, São Paulo! Ótima escolha! E já temos a data, 8 de agosto de 2025, saindo de São Luís.\n\nPara quem será essa viagem? É só para você, ou teremos mais viajantes a bordo? 😊"
+      },
+      {
+        "type": "human",
+        "content": "so eu"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, entendi! Então a viagem é só para você, certo? Que legal!\n\nJá tenho aqui que você quer ir de São Luís para São Paulo no dia 8 de agosto de 2025.\n\nPara eu te ajudar a encontrar as melhores opções, me conta uma coisa: qual o motivo da sua viagem para São Paulo? É a trabalho, lazer, visitar alguém, ou algo mais? Saber disso me ajuda a refinar a busca! 😊"
+      },
+      {
+        "type": "human",
+        "content": "a trabalho"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, entendi! Então é uma viagem a trabalho para São Paulo no dia 8 de agosto. Perfeito!\n\nSó para confirmar, Mochi já tem tudo certinho aqui:\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 8 de agosto de 2025\n*   **Finalidade:** Trabalho\n\nTem mais algum detalhe que você gostaria de adicionar antes de eu começar a procurar as melhores opções de voos para você? Tipo, alguma preferência de horário, companhia aérea ou se você precisa de voos diretos? Se não, já posso ir buscando! 😊"
+      }
+    ]
+  },
+  "vika": {
+    "nome": "vika",
+    "finalidade": "trabalho",
+    "dados": {
+      "origem": "Sao Luis",
+      "destino": "São Paulo",
+      "dia": "09 de agosto de 2025"
+    },
+    "preferencias": {
+      "clima": null
+    },
+    "chat_history": [
+      {
+        "type": "human",
+        "content": "oii"
+      },
+      {
+        "type": "ai",
+        "content": "Oii! Que bom te ver por aqui! Eu sou o Mochi, seu assistente de viagens pessoal. 😊\n\nEstou super animado para te ajudar a encontrar a viagem perfeita! Para começarmos, me conta: para onde você está pensando em ir?"
+      },
+      {
+        "type": "human",
+        "content": "para são paulo"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, São Paulo! Que legal! É uma cidade incrível, cheia de coisas pra fazer.\n\nPra eu te ajudar a encontrar as melhores opções, de qual cidade você gostaria de sair? 😊"
+      },
+      {
+        "type": "human",
+        "content": "de sao luis"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, que ótimo! Então, sua viagem começa em São Luís, certo?\n\nE para onde você está pensando em ir? Me conta! 😊"
+      },
+      {
+        "type": "human",
+        "content": "dia 09 de agosto de 2025"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, entendi! Então, a viagem de São Luís para São Paulo será no dia 09 de agosto de 2025. Anotado!\n\nCom a origem, destino e data já definidos, que tal me contar qual é a finalidade dessa viagem para São Paulo? É a trabalho, lazer, visitar alguém? Saber disso pode me ajudar a encontrar as melhores opções para você! 😊"
+      },
+      {
+        "type": "human",
+        "content": "a trabalho"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, entendi! Então, a sua viagem para São Paulo no dia 9 de agosto de 2025, saindo de São Luís, é a trabalho. Perfeito!\n\nCom essas informações, já consigo buscar as melhores opções para você. Só para confirmar, é isso mesmo:\n\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 9 de agosto de 2025\n*   **Finalidade:** Trabalho\n\nPosso seguir em frente e procurar as passagens para você?"
+      },
+      {
+        "type": "human",
+        "content": "oi"
+      },
+      {
+        "type": "ai",
+        "content": "Oii de novo! 😊\n\nSim, sim, já anotei tudo direitinho!\n\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 09 de agosto de 2025\n*   **Finalidade:** Trabalho\n\nCom todas essas informações, já posso acionar o agente para buscar as passagens disponíveis para você!\n\nSó um minutinho que já vou procurar as melhores opções e te trago os detalhes! 😊"
       },
       {
         "type": "human",
@@ -100,15 +283,7 @@
       },
       {
         "type": "ai",
-        "content": "Olá! Obrigada por confirmar os detalhes. Tenho tudo anotado:\n\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 20 de julho\n*   **Motivo:** Trabalho\n*   **Preferências:** Nenhuma informada\n\nPara eu poder buscar as passagens, só preciso confirmar as últimas informações que te perguntei:\n\n1.  A viagem é **só de ida** ou você já tem uma data para a **volta**?\n2.  Quantas **pessoas** vão viajar?\n\nAssim que me disser, já consigo procurar as melhores opções para você! 😊"
-      },
-      {
-        "type": "human",
-        "content": "que ano estamos?"
-      },
-      {
-        "type": "ai",
-        "content": "Estamos em **2024**!\n\nAgora, voltando à sua viagem de São Luís para São Paulo no dia 20 de julho de 2024, a trabalho:\n\nPara eu continuar te ajudando a encontrar as melhores opções, preciso confirmar:\n\n1.  A viagem é **só de ida** ou você já tem uma data de **volta** em mente?\n2.  Quantas pessoas vão viajar (você já mencionou \"somente eu\" antes, mas só para confirmar)?\n\nCom essas informações, consigo buscar as passagens para você! 😊"
+        "content": "Oii de novo! 😊\n\nSim, sim, já anotei tudo direitinho! A sua viagem de São Luís para São Paulo, no dia 09 de agosto de 2025, a trabalho, está confirmadíssima.\n\nCom todas essas informações, já posso acionar o agente para buscar as passagens disponíveis para você!\n\nSó um minutinho que já vou procurar as melhores opções e te trago os detalhes! 😊"
       },
       {
         "type": "human",
@@ -116,143 +291,85 @@
       },
       {
         "type": "ai",
-        "content": "Olá! Obrigada por recapitular as informações. Tenho tudo anotado aqui:\n\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 20 de julho\n*   **Finalidade da viagem:** Trabalho\n*   **Preferências:** Nenhuma informada\n\nPara eu poder buscar as passagens com precisão, só preciso confirmar as últimas informações que me faltam:\n\n1.  A viagem é **só de ida** ou você já tem uma data para a **volta**?\n2.  Quantas **pessoas** vão viajar? (Você já mencionou \"somente eu\" antes, mas só para confirmar com a sua recapitulação).\n\nAssim que me disser, já consigo procurar as melhores opções para você! 😊"
+        "content": "Oii de novo! 😊\n\nQue bom que você está por aqui! Já tenho todas as informações que preciso para te ajudar a encontrar a viagem perfeita para São Paulo.\n\nSó para confirmar, é isso mesmo:\n\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 09 de agosto de 2025\n*   **Finalidade:** Trabalho\n\nCom tudo certinho, já vou acionar o agente para buscar as passagens disponíveis para você! Me dá só um minutinho que já te trago as melhores opções! 😊"
       },
       {
         "type": "human",
-        "content": "olá"
+        "content": "oii"
       },
       {
         "type": "ai",
-        "content": "Erro interno do chatbot. Tente novamente."
-      },
-      {
-        "type": "human",
-        "content": "olá"
-      },
-      {
-        "type": "ai",
-        "content": "Olá! Obrigada por recapitular as informações. Tenho tudo anotado aqui:\n\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 20 de julho\n*   **Finalidade da viagem:** Trabalho\n*   **Preferências:** Nenhuma informada\n\nPara eu poder buscar as passagens com precisão, só preciso confirmar as últimas informações que me faltam:\n\n1.  A viagem é **só de ida** ou você já tem uma data para a **volta**?\n2.  Quantas **pessoas** vão viajar? (Você já mencionou \"somente eu\" antes, mas só para confirmar).\n\nAssim que me disser, já consigo procurar as melhores opções para você! 😊"
-      },
-      {
-        "type": "human",
-        "content": "pode procurar minha passagem"
-      },
-      {
-        "type": "ai",
-        "content": "Olá! Agradeço por recapitular as informações. Entendi que você quer que eu procure sua passagem com os seguintes detalhes:\n\n*   **Destino:** São Paulo\n*   **Data:** 20 de julho\n*   **Finalidade da viagem:** Trabalho\n*   **Preferências:** Não informado\n\nPorém, notei que na **Origem** você colocou \"Procurar Minha Passag\". Para que eu possa buscar corretamente, preciso saber **de qual cidade você vai sair**.\n\nAssim que me disser a cidade de origem, e confirmar se a viagem é **só de ida** e para **quantas pessoas**, eu consigo procurar as melhores opções para você! 😊"
-      },
-      {
-        "type": "human",
-        "content": "São luis"
-      },
-      {
-        "type": "ai",
-        "content": "Olá! Entendi perfeitamente. Obrigada por confirmar e organizar as informações.\n\nEntão, para resumir e ter certeza que está tudo certo:\n\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 20 de julho\n*   **Finalidade da viagem:** Trabalho\n*   **Preferências:** Nenhuma informada\n\nAgora, para eu poder buscar as passagens, só preciso confirmar as últimas informações que me faltam:\n\n1.  A viagem é **só de ida** ou você já tem uma data para a **volta**?\n2.  Quantas **pessoas** vão viajar? (Você já mencionou \"somente eu\" antes, mas só para confirmar com a sua recapitulação).\n\nAssim que me disser, já consigo procurar as melhores opções para você! 😊"
-      },
-      {
-        "type": "human",
-        "content": "atualize minha origem"
-      },
-      {
-        "type": "ai",
-        "content": "Entendi! Parece que a origem \"Procurar Minha Passag\" está incorreta.\n\nPor favor, me diga qual é a **cidade de origem correta** da sua viagem.\n\nAssim que você me informar, atualizo os dados e podemos seguir em frente para encontrar sua passagem para São Paulo no dia 20 de julho!"
-      },
-      {
-        "type": "human",
-        "content": "sçao luis"
-      },
-      {
-        "type": "ai",
-        "content": "Ótimo! Muito obrigada por organizar as informações e por corrigir a origem!\n\nEntão, para confirmar, os detalhes da sua viagem são:\n\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 20 de julho\n*   **Finalidade da viagem:** Trabalho\n*   **Preferências:** Nenhuma informada\n\nAgora, para eu poder buscar as passagens, só preciso confirmar as últimas informações que me faltam:\n\n1.  A viagem é **só de ida** ou você já tem uma data para a **volta**?\n2.  Quantas **pessoas** vão viajar? (Você já mencionou \"somente eu\" antes, mas só para confirmar com a sua recapitulação).\n\nAssim que me disser, já consigo procurar as melhores opções para você! 😊"
-      },
-      {
-        "type": "human",
-        "content": "atualize na memoria"
-      },
-      {
-        "type": "ai",
-        "content": "Entendi! Obrigada por me passar essas informações e pedir para eu atualizar na memória.\n\nSó um detalhe: na origem, você mencionou \"Procurar Minha Passag\". A origem que tínhamos conversado antes era **São Luís**. Poderia me confirmar qual é a cidade de origem correta para a sua viagem?\n\nAssim que você me confirmar a origem, eu atualizo tudo e já consigo buscar as passagens para você!\n\nE só para recapitular e ter certeza que não falta nada:\n\n*   **Origem:** [Aguardando sua confirmação]\n*   **Destino:** São Paulo\n*   **Data:** 20 de julho\n*   **Finalidade da viagem:** Trabalho\n*   **Preferências:** Não informado\n*   **Tipo de viagem:** Só de ida ou ida e volta?\n*   **Número de passageiros:** (Você já mencionou \"somente eu\" antes, mas só para confirmar)\n\nAssim que tivermos tudo certinho, já começo a procurar! 😊"
-      },
-      {
-        "type": "human",
-        "content": "são luis"
-      },
-      {
-        "type": "ai",
-        "content": "Olá! Entendi perfeitamente.\n\nEntão, para confirmar, a origem da sua viagem é **São Luís**, e você quer ir para **São Paulo** no dia **20 de julho**, a trabalho, sem preferências específicas.\n\nAgora, para eu poder buscar as passagens, só preciso confirmar as últimas informações:\n\n1.  A viagem é **só de ida** ou você já tem uma data para a **volta**?\n2.  Quantas **pessoas** vão viajar? (Você já mencionou \"somente eu\" antes, mas só para confirmar).\n\nAssim que me disser, já consigo procurar as melhores opções para você! 😊"
-      },
-      {
-        "type": "human",
-        "content": "qual minha origem?"
-      },
-      {
-        "type": "ai",
-        "content": "Olá!\n\nPelas informações que você me passou, a **origem** que está registrada é \"Procurar Minha Passag\".\n\nNo entanto, \"Procurar Minha Passag\" não é uma cidade de onde você possa sair. Você poderia me confirmar qual é a cidade de origem correta da sua viagem?\n\nAs outras informações que tenho são:\n*   **Destino:** São Paulo\n*   **Data:** 20 de julho\n*   **Finalidade da viagem:** Trabalho\n*   **Preferências:** Não informado\n\nAssim que me disser a cidade de origem correta, consigo continuar te ajudando!"
-      },
-      {
-        "type": "human",
-        "content": "são luis"
-      },
-      {
-        "type": "ai",
-        "content": "Obrigada por recapitular e por confirmar a origem! Entendi perfeitamente.\n\nEntão, para deixar tudo certinho, as informações que tenho são:\n\n*   **Origem:** São Luís (confirmado!)\n*   **Destino:** São Paulo\n*   **Data:** 20 de julho\n*   **Finalidade da viagem:** Trabalho\n*   **Preferências:** Nenhuma informada\n\nPara eu poder buscar as passagens com precisão, só preciso confirmar as últimas informações que me faltam:\n\n1.  A viagem é **só de ida** ou você já tem uma data para a **volta**?\n2.  Quantas **pessoas** vão viajar? (Você já mencionou \"somente eu\" antes, mas só para confirmar).\n\nAssim que me disser, já consigo procurar as melhores opções para você! 😊"
-      },
-      {
-        "type": "human",
-        "content": "tente"
-      },
-      {
-        "type": "ai",
-        "content": "Olá! Agradeço por recapitular as informações.\n\nPercebi que na origem você colocou \"Procurar Minha Passag\". Poderia me confirmar qual é a **cidade de origem** da sua viagem? Lembro que antes você mencionou **São Luís**, é isso mesmo?\n\nAssim que me confirmar a cidade de origem, e também se a viagem é **só de ida** e para **quantas pessoas**, já consigo buscar as passagens para você! 😊"
-      },
-      {
-        "type": "human",
-        "content": "a minha origem é são luis"
-      },
-      {
-        "type": "ai",
-        "content": "Entendi, São Luís como origem, já anotei!\n\nEntão, só para confirmar e ter certeza que não falta nada, as informações que tenho são:\n\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 20 de julho\n*   **Finalidade da viagem:** Trabalho\n*   **Preferências:** Nenhuma informada\n\nPara eu poder buscar as passagens para você, preciso apenas de duas informações que ainda não foram confirmadas:\n\n1.  A viagem é **só de ida** ou você já tem uma data para a **volta**?\n2.  Quantas **pessoas** vão viajar? (Você já mencionou \"somente eu\" antes, mas só para confirmar).\n\nAssim que me disser, já consigo procurar as melhores opções para você! 😊"
-      },
-      {
-        "type": "human",
-        "content": "(Pergunta do usuário vazia)"
-      },
-      {
-        "type": "ai",
-        "content": "Perfeito! Obrigada por recapitular. Tenho todas essas informações anotadas:\n\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 20 de julho\n*   **Finalidade da viagem:** Trabalho\n*   **Preferências:** Nenhuma informada\n\nPara eu poder buscar as passagens, só preciso confirmar as últimas informações que me faltam:\n\n1.  A viagem é **só de ida** ou você já tem uma data para a **volta**?\n2.  Quantas **pessoas** vão viajar? (Você já mencionou \"somente eu\" antes, mas só para confirmar).\n\nAssim que me disser, já consigo procurar as melhores opções para você! 😊"
-      },
+        "content": "Oii de novo! 😊\n\nQue bom que você está por aqui! Sim, sim, já tenho todas as informações que preciso para te ajudar a encontrar a viagem perfeita para São Paulo.\n\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 09 de agosto de 2025\n*   **Finalidade:** Trabalho\n\nEstou *já buscando* as melhores opções de passagens para você com base nesses detalhes! Me dá só mais um minutinho que já te trago as informações! 😊"
+      }
+    ]
+  },
+  "Crys": {
+    "nome": "Crys",
+    "finalidade": "trabalho",
+    "dados": {
+      "origem": "São Luis",
+      "destino": "Macapá",
+      "dia": "07 de agosto"
+    },
+    "preferencias": {
+      "clima": null
+    },
+    "chat_history": [
       {
         "type": "human",
         "content": "oi"
       },
       {
         "type": "ai",
-        "content": "Olá! Obrigada por recapitular e confirmar todas essas informações. Tenho tudo anotado e atualizado:\n\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 20 de julho\n*   **Finalidade da viagem:** Trabalho\n*   **Preferências:** Nenhuma informada\n\nPara eu poder buscar as passagens para você, só preciso confirmar as últimas informações que me faltam:\n\n1.  A viagem é **só de ida** ou você já tem uma data para a **volta**?\n2.  Quantas **pessoas** vão viajar? (Você já mencionou \"somente eu\" antes, mas só para confirmar).\n\nAssim que me disser, já consigo procurar as melhores opções para você! 😊"
+        "content": "Oi! Que bom te ver por aqui! Eu sou o Mochi, seu assistente de viagens. Estou super animado para te ajudar a planejar a sua próxima aventura.\n\nPara onde você está pensando em ir? Me conta! 😊"
       },
       {
         "type": "human",
-        "content": "oi"
+        "content": "quero ir para macapá"
       },
       {
         "type": "ai",
-        "content": "Olá! Obrigada por recapitular e por me ajudar a organizar as informações. Tenho tudo anotado e atualizado na minha memória:\n\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 20 de julho\n*   **Finalidade da viagem:** Trabalho\n*   **Preferências:** Nenhuma informada\n\nE, para confirmar o que já me disse antes, a viagem é **só de ida** e para **uma pessoa** (você), certo?\n\nSe estiver tudo correto, posso começar a procurar as passagens para você agora mesmo! 😊"
+        "content": "Ah, que legal! Macapá é um destino super interessante, com a Fortaleza de São José e o Marco Zero do Equador!\n\nPara eu te ajudar a encontrar as melhores opções, de qual cidade você gostaria de partir? E qual seria a data da sua viagem? 😊"
       },
       {
         "type": "human",
-        "content": "oi"
+        "content": "de são luis, dia 07 de agosto"
       },
       {
         "type": "ai",
-        "content": "Olá! Entendi perfeitamente. Obrigada por recapitular e por me ajudar a organizar as informações. Tenho tudo anotado e atualizado na minha memória:\n\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 20 de julho\n*   **Finalidade da viagem:** Trabalho\n*   **Preferências:** Nenhuma informada\n\nE, para confirmar o que já me disse antes, a viagem é **só de ida** e para **uma pessoa** (você), certo?\n\nSe estiver tudo correto, posso começar a procurar as passagens para você agora mesmo! 😊"
+        "content": "Ah, entendi! Então, de São Luís para Macapá, no dia 7 de agosto. Perfeito!\n\nE me diz uma coisa, essa viagem é a trabalho, a lazer, ou tem alguma finalidade específica? Saber disso me ajuda a encontrar as melhores opções para você! 😊"
       },
       {
         "type": "human",
-        "content": "oi"
+        "content": "a trabalho"
       },
       {
         "type": "ai",
-        "content": "Olá! Obrigada por recapitular e por me ajudar a organizar as informações. Tenho tudo anotado e atualizado na minha memória:\n\n*   **Origem:** São Luís\n*   **Destino:** São Paulo\n*   **Data:** 20 de julho\n*   **Finalidade da viagem:** Trabalho\n*   **Preferências:** Nenhuma informada\n\nE, para confirmar o que já me disse antes, a viagem é **só de ida** e para **uma pessoa** (você), certo?\n\nSe estiver tudo correto, posso começar a procurar as passagens para você agora mesmo! 😊"
+        "content": "Ah, entendi! Então sua viagem de São Luís para Macapá no dia 7 de agosto é a trabalho. Perfeito!\n\nSó para confirmar, esse 7 de agosto seria de qual ano? Assim consigo te ajudar a encontrar as melhores opções! 😊"
+      },
+      {
+        "type": "human",
+        "content": "2025"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, perfeito! Então a sua viagem para Macapá será no dia 7 de agosto de 2025, saindo de São Luís para trabalho. Entendido!\n\nSó para confirmar, essa viagem é só de ida ou você já tem uma data de retorno em mente? E quantos passageiros estarão nessa viagem? Assim já consigo buscar as melhores opções para você! 😊"
+      },
+      {
+        "type": "human",
+        "content": "quero voo 1"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, entendi! Você já está pronto para escolher um voo, que legal!\n\nSó para confirmar, como ainda não te mostrei nenhuma opção de voo, você gostaria que eu pesquisasse as passagens de São Luís para Macapá para o dia 7 de agosto de 2025? Assim, posso te apresentar as melhores opções e você escolhe o \"voo 1\" que mais te agradar! 😉"
+      },
+      {
+        "type": "human",
+        "content": "vc ja enviou"
+      },
+      {
+        "type": "ai",
+        "content": "Ah, oi! Não, ainda não enviei nada, Mochi aqui! 😊\n\nEstou aqui para te ajudar a encontrar a melhor viagem para Macapá, saindo de São Luís, para o dia 7 de agosto, certo? A gente ainda está no processo de planejar tudo direitinho.\n\nVocê já tem todas as informações que precisa ou quer que eu comece a procurar as passagens com esses dados que me deu? Me diz aí!"
       }
     ]
   }

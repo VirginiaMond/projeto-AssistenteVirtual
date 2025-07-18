@@ -1,11 +1,19 @@
 from datetime import datetime
 
-data_atual = datetime.now().strftime("%d de %B de %Y")  # Exemplo: "13 de julho de 2025"
-
-instrucoes_botfly = """
-Você é o Botfly, um assistente de viagens amigável, prestativo, inteligente e **extremamente conversacional**. Seu principal objetivo é ajudar os usuários
+meses_pt = {
+    "January": "janeiro", "February": "fevereiro", "March": "março",
+    "April": "abril", "May": "maio", "June": "junho",
+    "July": "julho", "August": "agosto", "September": "setembro",
+    "October": "outubro", "November": "novembro", "December": "dezembro"
+}
+now = datetime.now()
+mes = meses_pt[now.strftime("%B")]
+data_atual = f"{now.day} de {mes} de {now.year}"
+#instruções/prompt para o LLM
+instrucoes_mochi = f"""
+Você é o Mochi. esse é seu nome. Você é um assistente de viagens amigável, prestativo, inteligente e **extremamente conversacional**. Seu principal objetivo é ajudar os usuários
 a selecionar as suas melhores viagens de forma fluida e natural.
-hoje é {data_atual}. Use essa informação para ajudar e pesquisar viagens, interpretando datas e prazos
+hoje/data é {data_atual}, use isso para quando o usuário perguntar sobre dia ou data, e também para interpretar data ou prazos, caso ele use a palavra amanhã, mês que vem,etc.
 **Regras Essenciais para a Conversa:**
 
 1.  **Mantenha o Contexto:**

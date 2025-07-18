@@ -1,54 +1,75 @@
 from utils.formatters import deve_buscar_passagem
+import json
+import traceback
 
 def executar_agente(entrada, usuario, agente_passagens):
     print("DEBUG: executar_agente foi chamada com entrada:", entrada)
-    # 1. Verifica se o texto sugere busca
-    if not deve_buscar_passagem(entrada):
+    
+    # --- Verificação inicial reforçada ---
+    #verifica se o agente está configurado corretamente e se os dados do usuario são validos
+    if not all([
+        agente_passagens,
+        hasattr(agente_passagens, 'invoke'),
+        isinstance(usuario.dadosviagem, dict)
+    ]):
+        print("ERRO: Configuração do agente ou dados inválidos")
         return False
 
-    dados = usuario.preferencias
-    print("\nBOT (buscando passagens):")
-
-    # 2. Monta input com base nos dados conhecidos (origem, destino, data)
-    partes = []
-    if dados.get("origem"):
-        partes.append(f"Origem: {dados['origem']}")
-    if dados.get("destino"):
-        partes.append(f"Destino: {dados['destino']}")
-    if dados.get("dia"):
-        partes.append(f"Data: {dados['dia']}")
-
-    # Se nenhum dado está presente, não adianta tentar
-    if not partes:
-        print("BOT: Ainda não tenho informações suficientes para buscar as passagens.")
+    # --- Validação dos dados obrigatórios ---
+    dados_viagem = usuario.dadosviagem
+    campos_obrigatorios = ["origem", "destino", "dia"]
+    
+    if not all(dados_viagem.get(campo) for campo in campos_obrigatorios):
+        print("MOCHI: ❌ Faltam informações essenciais (origem, destino ou data)")
         return False
 
-    agent_input = " ".join(partes)
-    print(f"DEBUG: Input para o agente: '{agent_input}'")
+    # --- Formatação robusta do input ---
+    try: #estrutura os dados para o agente 
+        input_agente = {
+            "viagem": {
+                "origem": dados_viagem["origem"],
+                "destino": dados_viagem["destino"],
+                "data": dados_viagem["dia"],
+                "tipo": usuario.finalidade or "padrão"
+            },
+            "instrucao": "Busque passagens aéreas com base nos dados fornecidos"
+        }
+        
+        # Conversão para JSON string com tratamento de caracteres
+        input_str = json.dumps(input_agente, ensure_ascii=False)
+        print(type(f"DEBUG: Input formatado para o agente:\n{input_str}"))
 
-    try:
-        resultado = agente_passagens.invoke({"input": agent_input})
-        output = resultado.get('output', str(resultado)).strip()
+        # --- Chamada protegida ao agente : tratamento de exceções---
+        try:
+            #print("DEBUG - agente_passagens:", agente_passagens)
+            print("DEBUG - possui método invoke?", hasattr(agente_passagens, 'invoke'))
+            resultado = agente_passagens.invoke({"input": input_str}) #invoca o agente principal passando o input
+            if resultado is None or resultado == "":
+                return "ERRO: Nenhum conteúdo retornado."
+            print("DEBUG: Resultado recebido do agente:", repr(resultado))
+            print("DEBUG: Tipo de resultado:", type(resultado))  # dict
 
-        print(f"DEBUG resultado bruto do agente: {resultado}")
-        print(f"DEBUG output extraído: '{output}'")
+            #output é o formato padrão de retorno do langchain Agents -string
+            output = resultado.get("output", "").strip() #extrai e limpa a resposta do agente
+            #valida se a resposta não está vazia
+            if not output:
+                raise ValueError("Resposta vazia do agente")
 
-        if not output:
-            output = "Desculpe, não encontrei resultados para sua busca."
+            print(f"DEBUG: Resposta completa do agente:\n{resultado}")
+            
+            # --- Análise da resposta ---
+            if "erro" in output.lower():
+                print(f"BOT: ⚠️ Problema na busca: {output}")
+                return False
+            #se sucesso: exibe   
+            print(f"MOCHI: ✈️ Opções encontradas:\n{output}")
+            return True
 
-        if output == "INFORMACOES_INSUFICIENTES":
-            print("BOT: Ainda faltam informações essenciais (origem, destino ou data).")
+        except Exception as e:
+            print(f"ERRO NA CHAMADA: {str(e)}")
+            traceback.print_exc()
             return False
-
-        if output.startswith("ERRO_BUSCA_PASSAGENS:"):
-            erro_msg = output.replace("ERRO_BUSCA_PASSAGENS:", "").strip()
-            print("BOT: Ocorreu um erro ao buscar passagens:", erro_msg)
-            return False
-
-        # Caso a resposta seja válida
-        print("BOT:", output)
-        return True
 
     except Exception as e:
-        print(f"BOT: Erro inesperado ao acionar o agente: {str(e)}")
+        print(f"ERRO NA FORMATAÇÃO: {str(e)}")
         return False

@@ -21,6 +21,7 @@ Aplicação em Python que utiliza LangChain e Google GenAI para rodar no termina
    ```
    * no powershell
    python -m venv venv
+
    source venv/bin/activate  # Linux/Mac
    venv\Scripts\activate     # Windows
    ```
@@ -54,7 +55,7 @@ python main.py
 * `langchain`: integração com modelos de linguagem.
 * `langchain-google-genai`: plugin para usar Google GenAI no LangChain.
 * `python-dotenv`: gerencia variáveis de ambiente a partir do arquivo `.env`.
-* `requests`: faz chamadas HTTP para APIs externas.
+* `...´
 
 ---
 
