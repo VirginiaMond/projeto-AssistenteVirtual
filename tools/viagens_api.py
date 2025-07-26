@@ -17,7 +17,7 @@ IATA_CODIGOS = {
     "imperatriz":"IMP",
     "macapá":"MCP",
     "macapa":"MCP",
-    "china":"NKG",
+    "china":"HKG",
     "korea":"SEL",
     "rio de janeiro":"SDU"
 }
@@ -65,7 +65,7 @@ def corrigir_data(data):
     #Função principal que busca passagens aéreas usando a API Amadeus,
     #dado origem, destino e data da viagem.
 def buscar_passagens(origem: str, destino: str, data: str):
-    print(f"DEBUG: data recebida do agente: {data}")
+    #print(f"DEBUG: data recebida do agente: {data}")
     definir_locale_portugues() 
     
     try:
@@ -79,7 +79,7 @@ def buscar_passagens(origem: str, destino: str, data: str):
          # Corrige a formatação da data para facilitar o parsing
         data_corrigida = corrigir_data(data.strip())
         data_corrigida = completar_ano_se_faltando(data_corrigida)
-        print(f"DEBUG: Data corrigida para parses: '{data_corrigida}'")
+        #print(f"DEBUG: Data corrigida para parses: '{data_corrigida}'")
 
         # Formatos possíveis para tentar converter a string em objeto datetime
         formatos = ["%d de %B de %Y", "%d/%m/%Y", "%Y-%m-%d"]
@@ -90,7 +90,7 @@ def buscar_passagens(origem: str, destino: str, data: str):
             try:
                 data_obj = datetime.strptime(data_corrigida, fmt)
                 data_formatada = data_obj.strftime("%Y-%m-%d")  # Formato ISO
-                print(f"DEBUG: Data formatada para API: '{data_formatada}'")
+                #print(f"DEBUG: Data formatada para API: '{data_formatada}'")
                 break
             except ValueError:
                 continue
@@ -98,13 +98,16 @@ def buscar_passagens(origem: str, destino: str, data: str):
         if not data_formatada:
             return "ERRO_FERRAMENTA: Data no formato inválido. Use 'DD/MM/AAAA' ou 'DD de mês de AAAA'."
         
-        print(f"DEBUG: Enviando requisição Amadeus Flight Offers Search: origem_iata='{origem_iata}', destino_iata='{destino_iata}', data='{data_formatada}'")
+        #print(f"DEBUG: Enviando requisição Amadeus Flight Offers Search: origem_iata='{origem_iata}', destino_iata='{destino_iata}', data='{data_formatada}'")
 
         # 🔁 Usa a função da Amadeus
         voos = buscar_voos(origem_iata, destino_iata, data_formatada)
         # Verifica se houve erro na resposta da API
         if isinstance(voos, dict) and ("api_error" in voos or "api_status" in voos):
-            return f"ERRO_FERRAMENTA: Erro ao consultar a API: {voos.get('api_error') or voos.get('api_status')}"
+            msg = voos.get("message", "Erro desconhecido")
+            status = voos.get("status_code", "")
+            return f"ERRO_FERRAMENTA: [Amadeus {status}] {msg}"
+            #return f"ERRO_FERRAMENTA: Erro ao consultar a API: {voos.get('api_error') or voos.get('api_status')}"
 
         #formata os dados brutos da API para formato amigavel
         voos_formatados = formatar_voo(voos)
@@ -127,17 +130,20 @@ def buscar_passagens(origem: str, destino: str, data: str):
         if not resposta:
             return "ERRO_FERRAMENTA: Não consegui formatar nenhuma resposta. Tente novamente."
         # Junta todas as linhas da resposta em uma string única
+        
         resposta_str = "\n".join(resposta).strip()
 
         if not resposta_str:
             return "ERRO_FERRAMENTA Nenhum resultado válido foi formatado."
         
         # Retorna a string final com as opções de voos formatadas
-        print(f"DEBUG: resposta string final da api:{resposta_str}")
+        #print(f"DEBUG: resposta string final da api:{resposta_str}")
         return resposta_str
         #return {"resultado": resposta_str}
     except Exception as e:
-        return "resultado: ERRO_FERRAMENTA: Erro ao processar data: {str(e)}"
+        return f"resultado: ERRO_FERRAMENTA: [{type(e).__name__}] {str(e)}"
+
+        #return "resultado: ERRO_FERRAMENTA: Erro ao processar data: {str(e)}"
 
 
       

@@ -3,7 +3,7 @@ Criação de assistente Virtual de viagens com interface conversacional (Chatbot
 
 
 ## Descrição  
-Aplicação em Python que utiliza LangChain e Google GenAI para rodar no terminal (linha de comando), consumindo APIs via requests.
+Aplicação em Python que utiliza LangChain e Google GenAI para rodar no terminal (linha de comando)
 
 ## Requisitos - instalação
 

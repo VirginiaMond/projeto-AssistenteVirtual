@@ -44,7 +44,7 @@ def criar_agente(llm, usuario):
         tools=ferramentas,
         llm=llm,
         agent=AgentType.OPENAI_FUNCTIONS, # Usa o modelo no estilo "function calling"
-        verbose=True, # Exibe logs no terminal
+        verbose=False, # Exibe logs no terminal
         agent_kwargs={
             "system_message": SystemMessage(content="""
             Você é um agente de software especializado em extrair informações de viagem e chamar a ferramenta 'BuscaPassagens'.

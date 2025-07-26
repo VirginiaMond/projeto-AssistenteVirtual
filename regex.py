@@ -28,13 +28,13 @@ def atualizar_dados_usuario(entrada: str, usuario):
         nome_extraido = match_name.group(1).strip().title()
         if not hasattr(usuario, 'nome') or usuario.nome != nome_extraido:
             usuario.nome = nome_extraido
-            print(f"DEBUG: Nome do usuário atualizado para '{usuario.nome}'")
+            #print(f"DEBUG: Nome do usuário atualizado para '{usuario.nome}'")
 
     # Dia/data
-    match_dia = re.search(r"(?:dia|em)\s+(\d{1,2}(?:\s+de\s+[a-zA-Zà-ú]+){1,2}(?:\s+de\s+\d{4})?)", entrada.lower())
+    match_dia = re.search(r"(?:dia|data|em)\s+(\d{1,2}(?:\s+de\s+[a-zA-Zà-ú]+){1,2}(?:\s+de\s+\d{4})?)", entrada.lower())
     if match_dia:
         dados_usuario["dia"] = match_dia.group(1).strip()
-        print(f"DEBUG: Dia atualizado para '{dados_usuario['dia']}'")
+        #print(f"DEBUG: Dia atualizado para '{dados_usuario['dia']}'")
 
     # Destino
     match_destino = re.search(r"(?:para|destino é)\s+([a-zA-ZÀ-ÿ\s]+)", entrada.lower())
@@ -42,7 +42,7 @@ def atualizar_dados_usuario(entrada: str, usuario):
         destino = match_destino.group(1).strip().title()
         if len(destino.split()) <= 4:
             dados_usuario["destino"] = destino
-            print(f"DEBUG: Destino atualizado para '{dados_usuario['destino']}'")
+            #print(f"DEBUG: Destino atualizado para '{dados_usuario['destino']}'")
 
     # Origem
     match_origem = re.search(
@@ -53,13 +53,13 @@ def atualizar_dados_usuario(entrada: str, usuario):
         origem = match_origem.group(1).strip().title()
         if len(origem.split()) <= 4:
             dados_usuario["origem"] = origem
-            print(f"DEBUG: Origem atualizada para '{dados_usuario['origem']}'")
+            #print(f"DEBUG: Origem atualizada para '{dados_usuario['origem']}'")
     #caso origem esteja no inicio da frase
     elif not dados_usuario["origem"] and re.match(r"^([a-zA-ZÀ-ÿ\s]+?),\s*(?:dia|em|para)", entrada.lower()):
         origem = re.match(r"^([a-zA-ZÀ-ÿ\s]+?),\s*(?:dia|em|para)", entrada.lower()).group(1).strip().title()
         if len(origem.split()) <= 4 and origem:
             dados_usuario["origem"] = origem
-            print(f"DEBUG: Origem atualizada (início da frase) para '{dados_usuario['origem']}'")
+            #print(f"DEBUG: Origem atualizada (início da frase) para '{dados_usuario['origem']}'")
     
     #finalidade de viagem
     match_finalidade = re.search(PADRAO_FINALIDADE, entrada.lower())
@@ -70,10 +70,6 @@ def atualizar_dados_usuario(entrada: str, usuario):
             usuario.finalidade = "trabalho"
         elif "lazer" in finalidade_extraida:
             usuario.finalidade = "lazer"
-        print(f"DEBUG: Finalidade extraída: '{finalidade_extraida}', Definida como: '{usuario.finalidade}'")
-       
-    else:
-        print("DEBUG: Nenhuma finalidade identificada na entrada")
-
+        #print(f"DEBUG: Finalidade extraída: '{finalidade_extraida}', Definida como: '{usuario.finalidade}'")
 
     return dados_usuario

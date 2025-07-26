@@ -1,7 +1,7 @@
 from langchain_core.messages import HumanMessage, AIMessage 
 
 class Usuario:
-    def __init__(self, nome, finalidade, dadosviagem=None, preferencias=None, chat_history=None):
+    def __init__(self, nome, finalidade, dadosviagem=None, preferencias=None, chat_history=None, passagens=None):
         self.nome = nome
         self.finalidade = finalidade
         # Se dadosviagem não for fornecido, inicializa com valores padrão None
@@ -14,12 +14,25 @@ class Usuario:
         self.preferencias = preferencias or {
             "clima": None
         }
+        self.passagens = passagens or {}
         # Histórico de mensagens do chat, vazio se não fornecido
         self.chat_history = chat_history or []
 
     def atualizar_preferencia(self, chave, valor): #Atualiza o valor de uma preferência existente.
         if chave in self.preferencias:
             self.preferencias[chave] = valor
+    
+    def adicionar_voos(self, busca_id, voos):
+        """Adiciona múltiplos voos de uma única busca"""
+        if not isinstance(voos, list):
+            voos = [voos]  # Converte para lista se for único
+            
+        self.passagens[busca_id] = {
+            'timestamp': datetime.now().isoformat(),
+            'voos': voos,
+            'melhor_opcao': min(voos, key=lambda x: x['preco'])  # Exemplo de processamento
+        }
+
 
     def to_dict(self): #Serializa o objeto Usuario em um dicionário para salvar ou manipular
         return {
@@ -27,6 +40,7 @@ class Usuario:
             "finalidade": self.finalidade,
             "dados": self.dadosviagem,
             "preferencias": self.preferencias,
+            "passagens": self.passagens,
             "chat_history": self.chat_history
         }
 
@@ -48,5 +62,6 @@ class Usuario:
             finalidade=d.get("finalidade"),
             dadosviagem=d.get("dados"),
             preferencias=d.get("preferencias"),
+            passagens=d.get("passagens"),
             chat_history=d.get("chat_history")
         )

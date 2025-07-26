@@ -9,6 +9,7 @@ from prompt import instrucoes_mochi
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from google.api_core.exceptions import ResourceExhausted, InvalidArgument
 from utils.formatters import deve_buscar_passagem
+from datetime import datetime
 
 def iniciar_chat_terminal():
     #carrega os dados de usuário salvo 
@@ -16,7 +17,7 @@ def iniciar_chat_terminal():
     if memoria is None:
         memoria = {}
     
-    print("=== Assistente Virtual Mochi ^^ ===")
+    print("========== Assistente Virtual Mochi ^^ ==========")
     username = input("Por gentileza, me diga seu nome/id que queira utilizar: ")
     usuario = criar_usuario(username, memoria)
     #se n estiver preenchido, define
@@ -28,8 +29,9 @@ def iniciar_chat_terminal():
 
     while True:
         entrada = input("\nVocê: ")
+        salvar_memoria(memoria)
         if entrada.lower() in ["sair", "exit"]:
-            print("Mochi: Espero que eu tenha ajudado! Obrigado por me escolher... bye bye!")
+            print("Mochi: Tudo bem! Se precisar de mim depois, é só voltar — estarei por aqui. Boa viagem e até logo! ✈️🌟")
             salvar_memoria(memoria)
             break
         #atualiza os dados extraidos da frase
@@ -39,15 +41,30 @@ def iniciar_chat_terminal():
         #logica para confirmar busca
         if awaiting_search_confirmation:
             if "sim" in entrada.lower():
-                print("BOT: Ótimo! Realizando a busca de passagens agora...")
-                if executar_agente("buscar passagens", usuario, agente_passagens):
+                print("MOCHI: Ótimo! Realizando a busca de passagens agora...")
+                dados_passagens = executar_agente("buscar passagens", usuario, agente_passagens)
+                if dados_passagens:
+                    #Gera uma chave única baseada no timestamp
+                    chave_passagem = f"busca_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+    
+                    # Adiciona ao dicionário de passagens
+                    if not hasattr(usuario, 'passagens') or not isinstance(usuario.passagens, dict):
+                        usuario.passagens = {}
+    
+                    usuario.passagens[chave_passagem] = dados_passagens
+                    #if not hasattr(usuario, 'passagens'):  
+                        #usuario.passagens = {}  
+                        # Adicione os dados
+                    #usuario.passagens.append(dados_passagens)  
+                    print("MOCHI: Aqui estão os dados das passagens encontradas:")
+                    print(dados_passagens)
                     salvar_memoria(memoria)
                 else:
-                    print("BOT: Não foi possível realizar a busca mesmo com a confirmação.")
+                    print("MOCHI: Não foi possível realizar a busca no momento, pode tentar novamente mais tarde.")
                 awaiting_search_confirmation = False
                 continue
             elif "não" in entrada.lower():
-                print("BOT: Entendido. Posso te ajudar com outra coisa?")
+                print("MOCHI: Entendido. Posso te ajudar com outra coisa?")
                 awaiting_search_confirmation = False
                 salvar_memoria(memoria)
                 continue
@@ -58,7 +75,10 @@ def iniciar_chat_terminal():
         if not human_message_content: #se estiver vazio
             human_message_content = "Informações de contexto e entrada do usuário foram fornecidas, mas sem conteúdo específico."
         #carrega instruções/prompt inicial do sistema 
-        system_message_content = instrucoes_mochi.strip()
+        #system_message_content = instrucoes_mochi.strip()
+        # Substituir instruções com nome do usuário
+        system_message_content = instrucoes_mochi.strip().replace("{nome}", usuario.nome or username)
+
         if not system_message_content:
             system_message_content = "Você é um assistente de viagens de IA."
 
@@ -67,6 +87,10 @@ def iniciar_chat_terminal():
         mensagens = [
             SystemMessage(content=system_message_content)
         ]
+        # Adiciona histórico anterior (limitando a 10 últimas interações, por segurança)
+        #for msg in usuario.chat_history[-5:]:
+            #mensagens.append(msg)
+        
         if human_message_content:
             mensagens.append(HumanMessage(content=human_message_content))
         
@@ -83,17 +107,17 @@ def iniciar_chat_terminal():
             texto_resposta = resposta.content if isinstance(resposta, AIMessage) else str(resposta)
             if not texto_resposta.strip(): # Fallback se a resposta do LLM for vazia
                 texto_resposta = "Desculpe, não consegui gerar uma resposta significativa. Tente novamente."
-            print("BOT:", texto_resposta)
+            print("MOCHI:", texto_resposta)
         
         #tratamentos de erros
         except (ResourceExhausted, InvalidArgument) as e:
-            print(f"BOT: Ocorreu um erro ao comunicar com a IA (Quota Excedida ou Argumento Inválido). Erro: {e}")
+            print(f"MOCHI: Ocorreu um erro ao comunicar com a IA (Quota Excedida ou Argumento Inválido). Erro: {e}")
             texto_resposta = "Erro de serviço da IA. Por favor, tente novamente mais tarde."
-            print("BOT:", texto_resposta)
+            print("MOCHI:", texto_resposta)
         except Exception as e:
-            print(f"BOT: Ocorreu um erro inesperado: {e}")
+            print(f"MOCHI: Ocorreu um erro inesperado: {e}")
             texto_resposta = "Erro interno do chatbot. Tente novamente."
-            print("BOT:", texto_resposta)
+            print("MOCHI:", texto_resposta)
         
         #atualiza o historico
         if usuario.chat_history is None:
@@ -101,8 +125,11 @@ def iniciar_chat_terminal():
         #adiciona pergunta e resposta ao historico
         entrada = entrada.strip() if entrada.strip() else "(Pergunta do usuário vazia)"
         texto_resposta = texto_resposta.strip() if texto_resposta.strip() else "(Resposta do BOT vazia)"
-        usuario.chat_history.append(HumanMessage(content=entrada))
-        usuario.chat_history.append(AIMessage(content=texto_resposta))
+        # Evita duplicação de mensagens
+        if not usuario.chat_history or usuario.chat_history[-1].content != entrada:
+            usuario.chat_history.append(HumanMessage(content=entrada))
+        if not usuario.chat_history or usuario.chat_history[-1].content != texto_resposta:
+            usuario.chat_history.append(AIMessage(content=texto_resposta))
         
         #recupera dados mais recentes do usuario
         prefs = usuario.preferencias
@@ -114,23 +141,41 @@ def iniciar_chat_terminal():
         
         dados_completos = origem and destino and dia
 
+        # Caso o usuário já tenha dito para buscar
+        if dados_completos and deve_buscar_passagem(entrada) and not awaiting_search_confirmation:
+            print("MOCHI: Perfeito! Buscando passagens agora...")
+            dados_passagens = executar_agente(entrada, usuario, agente_passagens)
+            if dados_passagens:
+                salvar_memoria(memoria)
+            else:
+                print("MOCHI: Não consegui encontrar passagens agora.")
+            continue
+        # Caso os dados estejam completos, mas o usuário ainda não pediu a busca
+        elif dados_completos and not awaiting_search_confirmation:
+            print("MOCHI: Deseja que eu realize a busca agora? (sim/não)")
+            awaiting_search_confirmation = True
+            salvar_memoria(memoria)
+            continue
+        
+        # Se o usuário estiver respondendo "sim" após a pergunta
+        elif entrada.lower() in ["sim", "pode buscar", "sim, por favor"] and awaiting_search_confirmation:
+            print("MOCHI: Certo! Buscando as passagens agora...")
+            dados_passagens = executar_agente(entrada, usuario, agente_passagens)
+            if dados_passagens:
+                salvar_memoria(memoria)
+            else:
+                print("MOCHI: Não consegui encontrar passagens agora.")
+            awaiting_search_confirmation = False
+            salvar_memoria(memoria)
+            continue
+
         #confirma ou aciona busca automática
-        if dados_completos and not awaiting_search_confirmation:
-            if finalidade == "trabalho": 
-                print("BOT: Tenho todos os dados para sua viagem a trabalho. Deseja que eu realize a busca agora? (sim/não)")
-                awaiting_search_confirmation = True
-                salvar_memoria(memoria)
-                continue
-            elif finalidade == "lazer":
-                print("BOT: Que legal! Sua viagem a lazer está toda definida. Quando quiser, posso ajudar a buscar as passagens. Deseja agora? (sim/não)")
-                awaiting_search_confirmation = True
-                salvar_memoria(memoria)
-                continue
-        # Caso o usuário mencione algo que sugira busca de passagem, faz diretamente
-        elif deve_buscar_passagem(entrada) and not awaiting_search_confirmation:
-            sucesso = executar_agente(entrada, usuario, agente_passagens)
-            if sucesso:
-                salvar_memoria(memoria)
+        # (Opcional) Detecta quando o usuário quer informar a finalidade
+        elif "trabalho" in entrada.lower() or "lazer" in entrada.lower():
+            finalidade = "trabalho" if "trabalho" in entrada.lower() else "lazer"
+            print(f"MOCHI: Entendi que sua viagem é a passeio de {finalidade}. 😉")
+            salvar_memoria(memoria)
+            continue   
         
         salvar_memoria(memoria)
 

@@ -30,13 +30,18 @@ def carregar_memoria():
                         chat_history.append(HumanMessage(content=msg.get("content", "")))
                     elif msg.get("type") == "ai":
                         chat_history.append(AIMessage(content=msg.get("content", "")))
-                
+                passagens = dados.get("passagens", {})
+                if not isinstance(passagens, dict):
+                    passagens = {}
+
+
                 #cria e adiciona o objeto Usuario à memória
                 memoria[nome] = Usuario(
                     nome=dados.get("nome"),
                     finalidade=dados.get("finalidade"),
                     dadosviagem = dados.get("dados"),
                     preferencias=dados.get("preferencias", {}),
+                    passagens= dados.get("passagens",{}),
                     chat_history=chat_history
                 )
             return memoria #retorna o dicionário com todos os usuários
@@ -65,6 +70,7 @@ def salvar_memoria(memoria):
             "finalidade": usuario.finalidade,
             "dados": usuario.dadosviagem,
             "preferencias": usuario.preferencias,
+            "passagens": usuario.passagens,
             "chat_history": [
                 serializar_mensagem(m) 
                 for m in usuario.chat_history if m.content.strip() != ""
@@ -85,7 +91,8 @@ def criar_usuario(username, memoria):
             dadosviagem = None,
             preferencias={
                 "clima": None
-            }, 
+            },
+            passagens={}, 
             chat_history=[]
             
         )
