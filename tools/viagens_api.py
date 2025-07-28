@@ -18,8 +18,40 @@ IATA_CODIGOS = {
     "macapá":"MCP",
     "macapa":"MCP",
     "china":"HKG",
-    "korea":"SEL",
-    "rio de janeiro":"SDU"
+    "korea":"ICN",
+    "coreia do sul": "ICN",
+    "rio de janeiro":"SDU",
+    "nova york": "JFK",
+    "new york": "JFK",
+    "londres": "LHR",
+    "paris": "CDG",
+    "tóquio": "NRT",
+    "toquio": "NRT",
+    "dubai": "DXB",
+    "los angeles": "LAX",
+    "sidney": "SYD",
+    "sydney": "SYD",
+    "roma": "FCO",
+    "madri": "MAD",
+    "madrid": "MAD",
+    "berlim": "BER",
+    "lisboa": "LIS",
+    "amsterdã": "AMS",
+    "amsterdam": "AMS",
+    "cidade do méxico": "MEX",
+    "mexico city": "MEX",
+    "buenos aires": "EZE",
+    "cancun": "CUN",
+    "balneário camboriú": "NVT", # Aeroporto mais próximo (Navegantes)
+    "balneario camboriu": "NVT",
+    "recife": "REC",
+    "salvador": "SSA",
+    "manaus": "MAO",
+    "belo horizonte": "CNF", # Aeroporto de Confins
+    "porto alegre": "POA",
+    "curitiba": "CWB",
+    "florianópolis": "FLN",
+    "florianopolis": "FLN"
 }
 
   #Verifica se a string de data já contém um ano entre 2023 e 2030.
@@ -41,12 +73,12 @@ def definir_locale_portugues():
     try:
         # Para Linux/macOS
         locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
-        print("Locale definido: pt_BR.UTF-8")
+        #print("Locale definido: pt_BR.UTF-8")
     except locale.Error:
         try:
         # Para Windows
             locale.setlocale(locale.LC_TIME, 'Portuguese_Brazil.1252')
-            print("Locale definido: Portuguese_Brazil.1252")
+            #print("Locale definido: Portuguese_Brazil.1252")
         except locale.Error:
             print("⚠️ WARNING: Locale pt_BR não disponível. Parser de datas com mês em português pode falhar.")
 
@@ -72,9 +104,9 @@ def buscar_passagens(origem: str, destino: str, data: str):
         origem_iata = IATA_CODIGOS.get(origem.lower()) 
         destino_iata = IATA_CODIGOS.get(destino.lower()) 
         if not origem_iata:
-            return "ERRO_FERRAMENTA:Código IATA para '{origem}' não encontrado. Por favor, especifique uma cidade como 'São Paulo' ou 'Fortaleza'."
+            return f"ERRO_FERRAMENTA: Código IATA para '{origem}' não encontrado. Desculpe, no momento minha lista de lugares é restrita, não tenho essa origem, quer tentar outra?."
         if not destino_iata:
-            return "ERRO_FERRAMENTA:Código IATA para '{destino}' não encontrado. Por favor, especifique uma cidade como 'São Paulo' ou 'Fortaleza'."
+            return f"ERRO_FERRAMENTA:Código IATA para '{destino}' não encontrado. Desculpe, no momento minha lista de lugares é restrita. Por favor, tente outro destino! ."
 
          # Corrige a formatação da data para facilitar o parsing
         data_corrigida = corrigir_data(data.strip())

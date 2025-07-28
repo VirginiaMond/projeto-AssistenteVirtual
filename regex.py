@@ -2,6 +2,11 @@ import re
 
 PADRAO_FINALIDADE = r"(?:viagem\s+)?(a\s+trabalho|de\s+lazer|trabalho|lazer)"
 #---função principal que atualiza os dados do usuário com base na entrada de texto
+MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", 
+         "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+
+
+
 def atualizar_dados_usuario(entrada: str, usuario):
     dados_usuario = usuario.dadosviagem #acesso ao dicionario
     
@@ -51,16 +56,14 @@ def atualizar_dados_usuario(entrada: str, usuario):
     )
     if match_origem:
         origem = match_origem.group(1).strip().title()
-        if len(origem.split()) <= 4:
+        if origem.lower() not in MESES and len(origem.split()) <= 4:
             dados_usuario["origem"] = origem
-            #print(f"DEBUG: Origem atualizada para '{dados_usuario['origem']}'")
-    #caso origem esteja no inicio da frase
-    elif not dados_usuario["origem"] and re.match(r"^([a-zA-ZÀ-ÿ\s]+?),\s*(?:dia|em|para)", entrada.lower()):
-        origem = re.match(r"^([a-zA-ZÀ-ÿ\s]+?),\s*(?:dia|em|para)", entrada.lower()).group(1).strip().title()
-        if len(origem.split()) <= 4 and origem:
+
+    match_inicio = re.match(r"^([a-zà-ÿ\s]+?),\s*(?:dia|em|para)", entrada.lower())
+    if not dados_usuario.get("origem") and match_inicio:
+        origem = match_inicio.group(1).strip().title()
+        if origem.lower() not in MESES and len(origem.split()) <= 4:
             dados_usuario["origem"] = origem
-            #print(f"DEBUG: Origem atualizada (início da frase) para '{dados_usuario['origem']}'")
-    
     #finalidade de viagem
     match_finalidade = re.search(PADRAO_FINALIDADE, entrada.lower())
     if match_finalidade:

@@ -10,7 +10,7 @@ amadeus = Client(
 )
 # Função que consulta a API da Amadeus com os dados fornecidos
 def buscar_voos(origem_iata: str, destino_iata: str, data: str) -> list | dict:
-    print(f"DEBUG: Chamando API Amadeus: origem={origem_iata}, destino={destino_iata}, data={data}")
+    #print(f"DEBUG: Chamando API Amadeus: origem={origem_iata}, destino={destino_iata}, data={data}")
 
     try:
         #chamada principal à API amadeus com parametros de busca
@@ -25,7 +25,7 @@ def buscar_voos(origem_iata: str, destino_iata: str, data: str) -> list | dict:
             #travelClass="ECONOMY"
         )
         if resposta.data:
-            print("DEBUG: Resposta da Amadeus recebida (api/amadeus_client.py).")
+            #print("DEBUG: Resposta da Amadeus recebida (api/amadeus_client.py).")
             return resposta.data # Retorna os dados brutos da Amadeus (lista de voos)
         else:
             print("DEBUG: Amadeus não encontrou voos para a pesquisa.")

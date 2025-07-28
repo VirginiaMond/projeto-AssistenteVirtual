@@ -54,7 +54,7 @@ def executar_agente(entrada, usuario, agente_passagens):
             
             # --- Análise da resposta ---
             if "erro" in output.lower():
-                print(f"BOT: ⚠️ Problema na busca: {output}")
+                print(f"MOCHI: ⚠️ Problema na busca: {output}")
                 return False
             #se sucesso: exibe   
             #print(f"MOCHI: ✈️ Opções encontradas:\n{output}")
