@@ -1,7 +1,6 @@
 #código antigo que era somente a API Amadeus
 #usado o formatar_voo()
 
-TAXA_CAMBIO_EUR_BRL = 6.3  # mudar isso depois
 from datetime import datetime
 # Mapeamento de códigos de companhias aéreas para nomes completos
 MAPEAMENTO_COMPANHIAS = {

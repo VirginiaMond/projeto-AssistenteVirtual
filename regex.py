@@ -1,4 +1,5 @@
 import re
+from datetime import datetime
 
 PADRAO_FINALIDADE = r"(?:viagem\s+)?(a\s+trabalho|de\s+lazer|trabalho|lazer)"
 #---função principal que atualiza os dados do usuário com base na entrada de texto
@@ -36,10 +37,26 @@ def atualizar_dados_usuario(entrada: str, usuario):
             #print(f"DEBUG: Nome do usuário atualizado para '{usuario.nome}'")
 
     # Dia/data
-    match_dia = re.search(r"(?:dia|data|em)\s+(\d{1,2}(?:\s+de\s+[a-zA-Zà-ú]+){1,2}(?:\s+de\s+\d{4})?)", entrada.lower())
-    if match_dia:
-        dados_usuario["dia"] = match_dia.group(1).strip()
+    #match_dia = re.search(r"(?:dia|data|em)\s+(\d{1,2}(?:\s+de\s+[a-zA-Zà-ú]+){1,2}(?:\s+de\s+(202[5-9]|20[3-9]\d|2[1-9]\d{2}))?)", entrada.lower())
+    #if match_dia:
+        #dados_usuario["dia"] = match_dia.group(1).strip()
         #print(f"DEBUG: Dia atualizado para '{dados_usuario['dia']}'")
+    match_extenso = re.search(r"(?:dia|data|em)?\s*(\d{1,2})\s+de\s+([a-zA-Zà-ú]+)(?:\s+de\s+(202[5-9]|20[3-9]\d|2[1-9]\d{2}))?", entrada.lower())
+
+    # Tenta formatos numéricos (ex: 15/08/2025 ou 15-08)
+    match_numerico = re.search(r"(?:dia|data|em)?\s*(\d{1,2})[/-](\d{1,2})(?:[/-](202[5-9]|20[3-9]\d|2[1-9]\d{2}))?", entrada.lower())
+
+    if match_extenso:
+        dia = match_extenso.group(1)
+        mes = match_extenso.group(2)
+        ano = match_extenso.group(3) or str(datetime.now().year)
+        dados_usuario["dia"] = f"{dia} de {mes} de {ano}"
+
+    elif match_numerico:
+        dia = match_numerico.group(1).zfill(2)
+        mes = match_numerico.group(2).zfill(2)
+        ano = match_numerico.group(3) or str(datetime.now().year)
+        dados_usuario["dia"] = f"{dia}/{mes}/{ano}"
 
     # Destino
     match_destino = re.search(r"(?:para|destino é)\s+([a-zA-ZÀ-ÿ\s]+)", entrada.lower())

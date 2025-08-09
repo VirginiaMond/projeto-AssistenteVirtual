@@ -18,6 +18,7 @@ def iniciar_chat_terminal():
         memoria = {}
     
     print("========== Assistente Virtual Mochi ^^ ==========")
+    print("Orientação: caso queira encerrar a conversa, digite sair ou exit")
     username = input("Por gentileza, me diga seu nome/id que queira utilizar: ")
     usuario = criar_usuario(username, memoria)
     #se n estiver preenchido, define
@@ -28,7 +29,7 @@ def iniciar_chat_terminal():
     esperando_confirmacao_para_busca = False #flag para saber se o usuário está prestes a confirmar a busca
     busca_realizada = False
 
-    print("Seja bem vindo! Como posso ajudar?")
+    print("Digite algo para o Mochi (saudações, pedido, etc...)")
     while True:
         entrada = input("\nVocê: ")
         atualizar_dados_usuario(entrada, usuario)

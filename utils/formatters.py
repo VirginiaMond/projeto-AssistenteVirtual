@@ -14,9 +14,8 @@ def deve_buscar_passagem(texto: str) -> bool:
     # Expressões que combinam ações e objeto (voo ou passagem)
     padroes = [
         r"\b(buscar|comprar|reservar|procurar|achar|saber|ver)\b.*\b(passagens?|voos?)\b",  # buscar passagens
-        r"\b(passagens?|voos?)\b.*\b(preço|quanto|custam?|baratas?)\b",  # passagem + preço
-        r"\b(preço|valor|quanto custa|quanto sai)\b.*\b(passagens?|voos?)\b",  # quanto custa o voo
-        r"\b(desejo|quero|preciso)\b.*\b(passagens?|voos?)\b",  # quero passagens
+        r"\b(passagens?|voos?)\b.*\b(disponivel|tem)\b",  
+        r"\b(desejo|preciso)\b.*\b(passagens?|voos?)\b",  # quero passagens
     ]
 
     return any(re.search(p, texto) for p in padroes)

@@ -61,6 +61,9 @@ def completar_ano_se_faltando(data_str: str) -> str:
     if any(str(ano) in data_str for ano in range(2023, 2031)):  # já tem ano
         return data_str
     ano_atual = datetime.now().year
+    if re.match(r"^\d{1,2}[/-]\d{1,2}$", data_str.strip()):
+        separador = '/' if '/' in data_str else '-'
+        return f"{data_str}{separador}{ano_atual}"
     return f"{data_str} de {ano_atual}"
 
 

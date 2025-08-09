@@ -1,206 +1,50 @@
 {
-  "Vika": {
-    "nome": "Vika",
+  "Maria": {
+    "nome": "Maria",
     "finalidade": null,
     "dados": {
-      "origem": "Outubro",
-      "destino": "Salvador",
-      "dia": "05 de outubro"
+      "origem": "São Luis",
+      "destino": "Fazer Essa Viagem",
+      "dia": "27/08/2025"
     },
     "preferencias": {
       "clima": null
     },
     "passagens": {
-      "busca_20250726_232110": "INFORMACOES_INSUFICIENTES"
-    },
-    "chat_history": [
-      {
-        "type": "ai",
-        "content": "Olá, Vika! Que bom te encontrar por aqui! Eu sou o Mochi, seu assistente de viagens pessoal, e estou super animado para te ajudar a planejar sua viagem dos sonhos.\n\nQue legal que você quer ir de São Paulo para Salvador! É um destino maravilhoso, cheio de história, cultura e praias lindas.\n\nPara começarmos a planejar, Vika, você já tem uma data em mente para essa viagem? Assim consigo te ajudar a encontrar as melhores opções! E me conta, o que te atrai mais em Salvador? Praias, história, gastronomia?"
-      },
-      {
-        "type": "ai",
-        "content": "Olá, Vika! Que bom te ver por aqui! Eu sou o Mochi, seu assistente de viagens pessoal, e estou super animado para te ajudar a planejar sua próxima aventura.\n\nEntendi que você quer viajar no dia 05 de outubro para Salvador. Que ótima escolha! Salvador é um lugar incrível, cheio de história, cultura e uma culinária de dar água na boca.\n\nSó para confirmar, Vika, de qual cidade você gostaria de partir? É que aqui está marcado \"Outubro\" como origem, e acho que pode ter sido um pequeno engano. Assim que você me disser, podemos começar a procurar as melhores opções para você!"
-      },
-      {
-        "type": "ai",
-        "content": "Olá, Vika! Que bom te encontrar por aqui! Eu sou o Mochi, seu assistente de viagens pessoal, e estou super animado para te ajudar a planejar a sua próxima aventura.\n\nVi aqui que você está pensando em ir para Salvador no dia 5 de outubro. Que maravilha! Salvador é um destino incrível, cheio de história, cultura e uma energia contagiante.\n\nSó para confirmar, Vika, qual seria a sua cidade de origem? É que aqui está como \"Outubro\", e imagino que seja o mês da viagem, não a cidade de onde você vai partir, certo? Me conta de onde você quer sair para eu começar a procurar as melhores opções para você! 😊"
-      },
-      {
-        "type": "ai",
-        "content": "Olá, Vika! Que bom que você voltou!\n\nJá sei que você quer ir para Salvador no dia 5 de outubro. Que demais! Salvador é um lugar com uma energia incrível, tenho certeza que você vai amar.\n\nSó para a gente conseguir achar as melhores passagens para você, Vika, preciso confirmar qual é a sua cidade de origem. Aqui ainda está como \"Outubro\", e imagino que seja o mês da viagem, não a cidade de onde você vai partir, certo? Me conta de onde você quer sair para eu começar a procurar as melhores opções para você, estrelinha."
-      },
-      {
-        "type": "ai",
-        "content": "Ah, entendi, Vika! Desculpe a confusão. É que aqui nas minhas anotações estava \"Outubro\" como sua cidade de origem, e eu queria ter certeza de que não era um engano.\n\nEntão, para eu poder te ajudar a encontrar as passagens para Salvador no dia 5 de outubro, preciso saber de qual cidade você vai partir. Me conta qual é a sua cidade de origem, por favor? Assim consigo buscar as melhores opções para você, estrelinha."
-      },
-      {
-        "type": "ai",
-        "content": "Ah, entendi, Vika! Então a sua cidade de origem é São Luís! Perfeito!\n\nEntão, só para recapitular e ter certeza que está tudo certinho: você é a Vika, quer viajar de São Luís para Salvador no dia 05 de outubro. É isso mesmo, estrelinha?\n\nSe estiver tudo confirmado, já posso começar a procurar as melhores opções de voos para você! Tem mais alguma coisa que você gostaria de me contar sobre essa viagem?"
-      },
-      {
-        "type": "ai",
-        "content": "Aqui estão os dados das passagens encontradas:\nINFORMACOES_INSUFICIENTES"
-      },
-      {
-        "type": "ai",
-        "content": "Olá, Vika! De acordo com as informações que tenho aqui, sua origem está registrada como \"Outubro\", estrelinha.\n\nMas, Vika, como \"Outubro\" é um mês, imagino que tenha sido um pequeno engano, certo? Você poderia me dizer de qual cidade você gostaria de partir para Salvador? Assim consigo te ajudar a encontrar as melhores opções de voos!"
-      }
-    ]
-  },
-  "gio": {
-    "nome": "gio",
-    "finalidade": null,
-    "dados": {
-      "origem": null,
-      "destino": "Salvador",
-      "dia": null
-    },
-    "preferencias": {
-      "clima": null
-    },
-    "passagens": {},
-    "chat_history": [
-      {
-        "type": "ai",
-        "content": "Olá, Gio! Que bom te ver por aqui! Eu sou o Mochi, seu assistente de viagens pessoal, e estou super animado para te ajudar a planejar sua próxima aventura.\n\nPelo que vejo, ainda não temos nenhuma busca salva, então podemos começar do zero! Me conta, para onde você está pensando em ir? Ou talvez você já tenha uma data em mente? Estou aqui para te ajudar a encontrar a viagem perfeita! 😊"
-      },
-      {
-        "type": "ai",
-        "content": "Olá, Gio! Que bom te ver por aqui! Eu sou o Mochi, seu assistente de viagens, e estou aqui para te ajudar a encontrar a viagem perfeita. Pelo que vejo, você quer ir para Salvador, saindo de São Luís, no dia 09 de outubro.\n\nQue ótima escolha, Salvador é um lugar incrível!\n\nCom essas informações, já posso começar a procurar as melhores opções para você. Quer que eu acione o agente para buscar as passagens para Salvador, saindo de São Luís, no dia 09 de outubro?\n\nEnquanto isso, se quiser, posso te dar algumas dicas e informações sobre Salvador! O que acha?"
-      },
-      {
-        "type": "ai",
-        "content": "Olá, Gio! Que bom te ver por aqui! Eu sou o Mochi, seu assistente de viagens pessoal, e estou super animado para te ajudar a planejar sua próxima aventura.\n\nPelo que vejo, você já tem Salvador em mente como destino, que maravilha! Para começarmos, você poderia me contar um pouco mais sobre o que você está procurando para essa viagem? Por exemplo, qual seria a data ideal para você ir para Salvador? Assim, posso começar a te ajudar a encontrar as melhores opções! 😊"
-      },
-      {
-        "type": "ai",
-        "content": "Olá, Gio! Sou o Mochi, seu assistente de viagens. Que bom te encontrar por aqui!\n\nPelo que vejo, você já me contou que seu destino é Salvador, que maravilha! É um lugar incrível.\n\nPara te ajudar a encontrar a viagem perfeita, preciso de mais algumas informações. De onde você gostaria de partir e qual a data da sua viagem? E tem alguma preferência especial para essa viagem? Assim consigo te ajudar melhor! 😊"
-      },
-      {
-        "type": "ai",
-        "content": "Olá, Gio! Eu sou o Mochi, seu assistente de viagens. Que bom te encontrar por aqui!\n\nPelo que vejo, você já me contou que seu destino é Salvador, que maravilha! É um lugar incrível!\n\nPara eu te ajudar a encontrar a viagem perfeita para você, preciso de mais alguns detalhes. De qual cidade você gostaria de partir? E qual seria a data da sua viagem? Se tiver alguma finalidade específica ou preferência, me conta também! Assim consigo te dar as melhores dicas e opções. 😊"
-      },
-      {
-        "type": "ai",
-        "content": "Olá, Gio! Que bom te encontrar por aqui! Eu sou o Mochi, seu assistente de viagens pessoal, e estou aqui para te ajudar a planejar a sua próxima aventura.\n\nPelo que vejo aqui, sua origem ainda não foi informada. Mas não se preocupe, podemos resolver isso rapidinho!\n\nVocê já tem alguma ideia de onde gostaria de partir para Salvador? Me conta, assim posso começar a te ajudar a encontrar as melhores opções! 😊"
-      },
-      {
-        "type": "ai",
-        "content": "Oi, Gio! Sou o Mochi, seu assistente de viagens. Que bom te ver por aqui!\n\nVocê me informou que o destino da sua viagem é Salvador, certo? Já anotei aqui! Para que eu possa te ajudar a encontrar a viagem perfeita, preciso de mais alguns detalhes. De onde você vai partir e qual a data da sua viagem? E tem alguma finalidade específica ou preferência que eu deva saber? 😊"
-      },
-      {
-        "type": "ai",
-        "content": "Oi, Gio! Que bom te ver por aqui de novo!\n\nEntendi que você já me passou algumas informações importantes. Eu já tenho Salvador como seu destino, que é ótimo! Mas para eu conseguir te ajudar a encontrar as melhores passagens, preciso saber de onde você vai sair (sua origem) e qual a data da sua viagem. Poderia me dizer, por favor? Assim consigo buscar as opções certas para você! 😊"
-      },
-      {
-        "type": "human",
-        "content": "oi"
-      },
-      {
-        "type": "ai",
-        "content": "Oi, Gio! Que bom te ver por aqui de novo! Eu sou o Mochi, seu assistente de viagens, e estou pronto para te ajudar a planejar sua próxima aventura.\n\nPelo que vejo, você já tem Salvador como destino, que maravilha! É um lugar incrível!\n\nPara eu conseguir te ajudar a encontrar a viagem perfeita, preciso de mais alguns detalhes. De qual cidade você gostaria de partir? E qual seria a data da sua viagem? Se tiver alguma finalidade específica ou preferência, me conta também! Assim consigo te dar as melhores dicas e opções. 😊"
-      },
-      {
-        "type": "human",
-        "content": "de sao luis, 08 de outubro"
-      },
-      {
-        "type": "ai",
-        "content": "Perfeito, Gio! Anotei aqui: sua viagem será de **São Luís** para **Salvador**, no dia **08 de outubro**.\n\nCom essas informações, já posso começar a procurar as melhores opções para você!\n\nQuer que eu acione o agente para buscar as passagens disponíveis para essa data? E enquanto isso, se quiser, posso te dar algumas dicas e informações sobre Salvador! O que acha? 😊"
-      },
-      {
-        "type": "human",
-        "content": "nao, quais os pontos turisticos?"
-      },
-      {
-        "type": "ai",
-        "content": "Ah, claro, Gio! Salvador é um tesouro de pontos turísticos, cheia de história, cultura e uma energia contagiante! Você vai amar!\n\nAqui estão alguns dos lugares que você *precisa* conhecer por lá:\n\n*   **Pelourinho:** Esse é o coração histórico de Salvador, Patrimônio Mundial da UNESCO. Com suas ruas de paralelepípedos, casarões coloridos, igrejas barrocas e muita música e arte, é um lugar vibrante e imperdível.\n*   **Elevador Lacerda:** Um dos cartões-postais da cidade! Ele liga a Cidade Alta (onde fica o Pelourinho) à Cidade Baixa, oferecendo uma vista espetacular da Baía de Todos os Santos.\n*   **Mercado Modelo:** Fica na Cidade Baixa, pertinho do Elevador Lacerda. É o lugar perfeito para encontrar artesanato local, lembrancinhas e experimentar a culinária baiana.\n*   **Farol da Barra:** Um dos faróis mais antigos do Brasil, localizado em uma praia linda. É um ótimo lugar para ver o pôr do sol e tirar fotos incríveis.\n*   **Igreja do Senhor do Bonfim:** Famosa pelas fitinhas coloridas e pela fé dos baianos. É um lugar de muita devoção e cultura.\n*   **Praias:** Salvador tem praias urbanas lindas, como a Praia do Porto da Barra (ótima para um mergulho tranquilo) e a Praia de Itapuã, imortalizada na música.\n\nE tem muito mais! Salvador é uma cidade para ser explorada sem pressa.\n\nGostaria de saber mais sobre algum desses pontos ou sobre outras coisas em Salvador, como lojas famosas ou dicas de viagem? Depois, podemos voltar a falar sobre as passagens, se quiser! 😊"
-      },
-      {
-        "type": "human",
-        "content": "ok, buscar passagens"
-      },
-      {
-        "type": "ai",
-        "content": "Oi, Gio! Que ótimo que você quer buscar as passagens para Salvador!\n\nPara eu conseguir acionar o agente e encontrar as melhores opções para você, preciso de mais duas informações importantes:\n\n1.  **De qual cidade você vai partir?** (Sua origem)\n2.  **Qual a data da sua viagem?**\n\nAssim que você me disser, consigo buscar as passagens certinhas para você! 😊"
-      },
-      {
-        "type": "human",
-        "content": "mas eu ja falei"
-      },
-      {
-        "type": "ai",
-        "content": "Ah, me desculpe, Gio! Você tem toda razão, já anotei aqui que seu destino é Salvador, que é um lugar maravilhoso!\n\nMinha intenção era só confirmar para ter certeza de que não faltava nada. Para eu conseguir buscar as melhores opções de passagens para você, ainda preciso saber de qual cidade você vai partir e qual a data da sua viagem. Me ajuda com isso? 😊"
-      },
-      {
-        "type": "human",
-        "content": "mas eu ja falei"
-      },
-      {
-        "type": "ai",
-        "content": "Ah, Gio, você tem toda razão! Me desculpe se não fui claro. Eu já anotei aqui que seu destino é Salvador, e isso é ótimo!\n\nO que eu ainda preciso para te ajudar a encontrar as passagens perfeitas é saber de qual cidade você vai partir (sua origem) e qual a data da sua viagem. Com essas duas informações, consigo buscar as melhores opções para você.\n\nEntão, me conta: de onde você vai sair e quando você quer ir para Salvador? 😊"
-      },
-      {
-        "type": "human",
-        "content": "eu ja falei minha origem, verifique nas conversas"
-      },
-      {
-        "type": "ai",
-        "content": "Ah, me desculpe, Gio! Parece que essa informação não chegou até mim ainda. Peço mil perdões pela confusão!\n\nPara que eu possa anotar direitinho e te ajudar a encontrar as melhores opções para Salvador, você poderia me dizer novamente de qual cidade você gostaria de partir? Assim consigo te ajudar melhor! 😊"
-      },
-      {
-        "type": "human",
-        "content": "sair"
-      }
-    ]
-  },
-  "vivi": {
-    "nome": "vivi",
-    "finalidade": null,
-    "dados": {
-      "origem": "Sao Luis",
-      "destino": "Salvador",
-      "dia": "08 de outubro"
-    },
-    "preferencias": {
-      "clima": null
-    },
-    "passagens": {
-      "busca_20250727_002026": "Voo 1: Companhia: Gol, Aeronave: Boeing 737-800, Origem: SLZ, Destino: SSA, Partida: 11:40, Chegada: 13:55, Duração: 2h15m, Escalas: Direto, Preço: EUR 73.17\nVoo 2: Companhia: Azul, Aeronave: Airbus A320, Origem: SLZ, Destino: SSA, Partida: 04:45, Chegada: 11:35, Duração: 6h50m, Escalas: 1 escala, Preço: EUR 170.79\nVoo 3: Companhia: Azul, Aeronave: Airbus A320, Origem: SLZ, Destino: SSA, Partida: 02:35, Chegada: 09:35, Duração: 7h, Escalas: 1 escala, Preço: EUR 170.79\nVoo 4: Companhia: Azul, Aeronave: Airbus A320, Origem: SLZ, Destino: SSA, Partida: 17:55, Chegada: 02:10, Duração: 8h15m, Escalas: 1 escala, Preço: EUR 170.79\nVoo 5: Companhia: Azul, Aeronave: Airbus A320, Origem: SLZ, Destino: SSA, Partida: 02:35, Chegada: 13:00, Duração: 10h25m, Escalas: 1 escala, Preço: EUR 170.79"
+      "busca_20250807_115229": "Voo 1: Companhia: Gol, Aeronave: Boeing 737-800, Origem: SLZ, Destino: FOR, Partida: 11:40, Chegada: 12:25, Duração: 24h45m, Escalas: 2 escalas, Preço: EUR 287.5\nVoo 2: Companhia: Gol, Aeronave: Boeing 737-800, Origem: SLZ, Destino: FOR, Partida: 11:40, Chegada: 12:25, Duração: 24h45m, Escalas: 2 escalas, Preço: EUR 287.5\nVoo 3: Companhia: Gol, Aeronave: Boeing 737-800, Origem: SLZ, Destino: FOR, Partida: 11:40, Chegada: 12:25, Duração: 24h45m, Escalas: 2 escalas, Preço: EUR 287.5\nVoo 4: Companhia: LATAM, Aeronave: Airbus A321, Origem: SLZ, Destino: FOR, Partida: 11:55, Chegada: 13:15, Duração: 1h20m, Escalas: Direto, Preço: EUR 313.57\nVoo 5: Companhia: Azul, Aeronave: Airbus A320, Origem: SLZ, Destino: FOR, Partida: 04:20, Chegada: 09:00, Duração: 4h40m, Escalas: 1 escala, Preço: EUR 375.0"
     },
     "chat_history": [
       {
         "type": "human",
-        "content": "oii"
+        "content": "Oi Mochi"
       },
       {
         "type": "ai",
-        "content": "Oii, Vivi! Que bom te ver por aqui! 👋\n\nEu sou o Mochi, seu assistente de viagens pessoal. Já dei uma olhadinha no nosso histórico e parece que é a primeira vez que conversamos, então seja muito bem-vinda!\n\nEstou aqui para te ajudar a planejar a viagem dos seus sonhos, seja para encontrar o destino perfeito, descobrir pontos turísticos incríveis, lojas famosas ou dar aquelas dicas de viagem que fazem toda a diferença.\n\nComo posso te ajudar hoje? Já tem algum lugar em mente ou quer algumas sugestões? 😊"
+        "content": "Olá, Maria! Que bom te ver por aqui! Eu sou o Mochi, seu assistente de viagens pessoal. Pelo que vejo, ainda não temos nenhuma busca salva para você, mas isso é ótimo, significa que podemos começar do zero e planejar algo incrível!\n\nEstou aqui para te ajudar a encontrar a viagem perfeita. Para onde você está pensando em ir? Ou talvez você já tenha uma data em mente? Me conta um pouco mais sobre o que você procura! 😊"
       },
       {
         "type": "human",
-        "content": "quero viajar para salvador, de sao luis, 08 de outubro"
+        "content": "Para Fortaleza"
       },
       {
         "type": "ai",
-        "content": "Que maravilha, Vivi! Salvador é um destino incrível, cheio de história, cultura e axé! E São Luís é um ótimo ponto de partida.\n\nVocê mencionou 8 de outubro. Seria 8 de outubro de 2025 ou para o ano que vem? E você já tem uma data de retorno em mente? Assim consigo te ajudar a encontrar as melhores opções de voos! 😊"
+        "content": "Ah, Fortaleza! Que ótima escolha, Maria! O Ceará é lindo demais, com praias incríveis e uma cultura super rica.\n\nPara eu começar a procurar as melhores opções para você, de onde você gostaria de partir?"
       },
       {
         "type": "human",
-        "content": "08 de outubro de 2025"
+        "content": "de São luis"
       },
       {
         "type": "ai",
-        "content": "Perfeito, Vivi! Anotado: partida de São Luís para Salvador no dia 8 de outubro de 2025.\n\nE para a volta, você já tem alguma data em mente? Ou prefere que eu procure por um período específico, como uma semana, por exemplo? 😊"
+        "content": "Perfeito, Maria! Então, sua viagem será de São Luís para Fortaleza. Já estamos montando um roteiro e tanto!\n\nAgora, para quando você está planejando essa viagem? Você já tem uma data específica em mente, ou prefere que eu veja as opções para um período mais flexível?"
       },
       {
         "type": "human",
-        "content": "sem volta"
+        "content": "dia 27/08"
       },
       {
         "type": "ai",
-        "content": "Entendi, Vivi! Então é uma viagem só de ida para Salvador, partindo de São Luís no dia 8 de outubro de 2025.\n\nCom todas essas informações, já posso acionar o agente para buscar as passagens para você!\n\nSó para confirmar:\n*   **Origem:** São Luís\n*   **Destino:** Salvador\n*   **Data de ida:** 8 de outubro de 2025\n*   **Viagem:** Somente ida\n\nPosso prosseguir com a busca?\n\nACIONAR_AGENTE:\n{\"origem\": \"São Luís\", \"destino\": \"Salvador\", \"data_ida\": \"08/10/2025\", \"data_volta\": \"somente ida\"}"
+        "content": "Entendido, Maria! Então, a viagem será de São Luís para Fortaleza no dia 27 de agosto de 2025.\n\nCom todas essas informações, já consigo procurar as passagens de ida para você! Posso acionar o agente para buscar as opções disponíveis agora mesmo?"
       },
       {
         "type": "human",
@@ -208,393 +52,79 @@
       },
       {
         "type": "ai",
-        "content": "Ótimo, Vivi! Estou acionando o agente agora mesmo para buscar as melhores opções de passagens para você.\n\nAssim que ele me retornar, te aviso! 😊\n\nACIONAR_AGENTE:\n{\"origem\": \"São Luís\", \"destino\": \"Salvador\", \"data_ida\": \"08/10/2025\", \"data_volta\": \"somente ida\"}"
+        "content": "Aqui estão os dados das passagens encontradas:\nVoo 1: Companhia: Gol, Aeronave: Boeing 737-800, Origem: SLZ, Destino: FOR, Partida: 11:40, Chegada: 12:25, Duração: 24h45m, Escalas: 2 escalas, Preço: EUR 287.5\nVoo 2: Companhia: Gol, Aeronave: Boeing 737-800, Origem: SLZ, Destino: FOR, Partida: 11:40, Chegada: 12:25, Duração: 24h45m, Escalas: 2 escalas, Preço: EUR 287.5\nVoo 3: Companhia: Gol, Aeronave: Boeing 737-800, Origem: SLZ, Destino: FOR, Partida: 11:40, Chegada: 12:25, Duração: 24h45m, Escalas: 2 escalas, Preço: EUR 287.5\nVoo 4: Companhia: LATAM, Aeronave: Airbus A321, Origem: SLZ, Destino: FOR, Partida: 11:55, Chegada: 13:15, Duração: 1h20m, Escalas: Direto, Preço: EUR 313.57\nVoo 5: Companhia: Azul, Aeronave: Airbus A320, Origem: SLZ, Destino: FOR, Partida: 04:20, Chegada: 09:00, Duração: 4h40m, Escalas: 1 escala, Preço: EUR 375.0"
       },
       {
         "type": "human",
-        "content": "realizar busca"
+        "content": "legal, qual o mais barato?"
       },
       {
         "type": "ai",
-        "content": "Certo, Vivi! Já estou com tudo pronto para buscar suas passagens.\n\nSó para confirmar mais uma vez, você quer uma passagem **somente de ida** de **São Luís** para **Salvador** no dia **8 de outubro de 2025**, correto?\n\nSe estiver tudo certinho, vou acionar o agente novamente para ele encontrar as melhores opções para você!\n\nACIONAR_AGENTE:\n{\"origem\": \"São Luís\", \"destino\": \"Salvador\", \"data_ida\": \"08/10/2025\", \"data_volta\": \"somente ida\"}"
+        "content": "O voo mais barato, Maria, é o da **Gol**, com preço de **EUR 287.5**.\n\nEle parte de São Luís (SLZ) às 11:40 e chega em Fortaleza (FOR) às 12:25 do dia seguinte, com duração de 24h45m e 2 escalas. Existem três opções com esses mesmos detalhes e preço.\n\nQue tal? Quer que eu te conte um pouco mais sobre Fortaleza enquanto você pensa? Posso te dar algumas dicas de pontos turísticos ou lugares para visitar por lá! 😊"
       },
       {
         "type": "human",
-        "content": "vc nao salvou?"
+        "content": "sim, eu vou ficar 3 dias, quais pontos turisticos?"
       },
       {
         "type": "ai",
-        "content": "Ah, Vivi, me desculpe se a informação que você viu te confundiu! Eu salvei sim, pode ficar tranquila! 😊\n\nAquela parte de \"Histórico de Buscas\" que você viu se refere a *resultados* de passagens que já foram encontradas e apresentadas. Como ainda não te mostrei nenhuma opção de voo, por isso ela aparece como \"Nenhuma busca salva\".\n\nMas as informações da sua viagem estão todas aqui comigo! Eu sei que você quer uma passagem **somente de ida** de **São Luís** para **Salvador** no dia **8 de outubro de 2025**.\n\nEu já acionei o agente para buscar, mas parece que ele ainda não me retornou com as opções.\n\nVocê gostaria que eu tentasse acionar o agente novamente para ver se ele encontra as passagens agora?"
+        "content": "Que legal, Maria! Três dias em Fortaleza dão para aproveitar bastante coisa! A cidade é cheia de lugares incríveis.\n\nPara a sua estadia, eu super recomendo alguns pontos turísticos que são imperdíveis:\n\n1.  **Praia do Futuro:** É a praia mais famosa de Fortaleza, conhecida pelas suas barracas gigantes e super estruturadas, com piscinas, shows e muita comida boa. Perfeita para passar o dia, comer um caranguejo e tomar um sol!\n2.  **Mercado Central:** Se você gosta de artesanato, rendas, castanhas e produtos locais, esse é o lugar! É um dos maiores mercados de artesanato do Brasil e ótimo para comprar lembrancinhas.\n3.  **Centro Dragão do Mar de Arte e Cultura:** Um complexo cultural super moderno que reúne museus (como o Museu da Cultura Cearense e o Museu de Arte Contemporânea), teatros, cinemas, planetário e vários bares e restaurantes. É um ótimo lugar para passear no fim de tarde e à noite.\n4.  **Ponte dos Ingleses (Ponte Metálica):** Um lugar lindo para ver o pôr do sol! Fica na Praia de Iracema e é um ponto de encontro para turistas e moradores, com uma vista espetacular do mar.\n5.  **Catedral Metropolitana de Fortaleza:** Uma construção imponente e linda, no coração da cidade. Vale a pena a visita para admirar a arquitetura gótica.\n\nE claro, não deixe de experimentar a culinária local, que é deliciosa!\n\nQuer que eu te conte mais sobre algum desses lugares ou talvez sobre onde comer ou fazer compras por lá? 😊"
       },
       {
         "type": "human",
-        "content": "sair"
-      },
-      {
-        "type": "human",
-        "content": "oi"
+        "content": "tem restaurantes famosos perto da praia?"
       },
       {
         "type": "ai",
-        "content": "Oii, Vivi! Que bom te ver por aqui de novo! 😊\n\nParece que perdemos um pouquinho do nosso papo, mas não tem problema, a gente retoma rapidinho!\n\nVocê já tinha me falado que queria ir para Salvador, certo? De onde você gostaria de partir e qual seria a data da sua viagem? E seria só ida ou ida e volta?\n\nEstou aqui para te ajudar a encontrar as melhores opções!"
+        "content": "Com certeza, Maria! Fortaleza é um paraíso para quem ama comer bem, especialmente frutos do mar, e tem muitos restaurantes famosos pertinho da praia.\n\nAqui vão algumas sugestões que você vai adorar:\n\n1.  **Crocobeach (Praia do Futuro):** Não é só um restaurante, é um complexo de lazer! Fica na famosa Praia do Futuro e é um dos mais conhecidos. Tem piscinas, shows, e um cardápio enorme com frutos do mar fresquinhos, especialmente o caranguejo, que é a estrela por lá. É perfeito para passar o dia inteiro.\n2.  **Chico do Caranguejo (Praia do Futuro):** Outra barraca gigante e super tradicional na Praia do Futuro, também famosa pelo caranguejo e outros pratos típicos. O ambiente é bem animado, com música ao vivo e estrutura completa.\n3.  **Coco Bambu (Várias unidades, incluindo uma na Beira Mar):** Embora seja uma rede que se espalhou pelo Brasil, o Coco Bambu nasceu em Fortaleza e é super popular por lá. Eles têm um cardápio vasto de frutos do mar, com pratos bem servidos e deliciosos. A unidade da Beira Mar é ótima para quem quer uma vista bonita.\n4.  **Barraca do Loro (Praia do Futuro):** Mais uma excelente opção na Praia do Futuro, com uma estrutura muito boa, comida saborosa e um ambiente agradável para relaxar.\n\nEsses lugares são ótimos para experimentar a culinária cearense e curtir o clima da praia ao mesmo tempo. Você vai adorar, Maria!\n\nTem mais alguma dúvida sobre a viagem ou sobre Fortaleza? 😊"
       },
       {
         "type": "human",
-        "content": "quero ir para salvador, de sao luis, dia 08 de outubro"
+        "content": "posso levar quantas malas pela Gol?"
       },
       {
         "type": "ai",
-        "content": "Entendi perfeitamente, Vivi! Salvador, partindo de São Luís no dia 8 de outubro.\n\nPelo que conversamos antes, essa data seria 8 de outubro de 2025, certo? E a viagem seria só de ida, sem data de retorno?\n\nAssim que você me confirmar, já posso acionar o agente para buscar as passagens para você! 😊"
+        "content": "Essa é uma ótima pergunta, Maria! A política de bagagem da Gol, assim como da maioria das companhias aéreas, pode variar um pouco dependendo da tarifa que você compra.\n\nGeralmente, funciona assim:\n\n1.  **Bagagem de Mão (Carry-on):** Você pode levar **uma mala de mão** de até 10 kg (com dimensões específicas, geralmente 35 x 25 x 55 cm) e **um item pessoal** (como uma mochila pequena, bolsa ou sacola de notebook) que caiba embaixo do assento à sua frente. Isso costuma ser gratuito em todas as tarifas.\n\n2.  **Bagagem Despachada (Checked Baggage):** Para a bagagem que vai no porão do avião, a quantidade e o peso permitidos dependem da tarifa que você escolhe.\n    *   **Tarifas mais básicas (como a \"Light\" ou \"Promo\")** geralmente não incluem bagagem despachada, e você precisaria comprar esse serviço à parte.\n    *   **Tarifas intermediárias ou superiores (como a \"Plus\" ou \"Max\")** costumam incluir uma ou mais malas despachadas (geralmente até 23 kg por mala).\n\nComo o voo da Gol que vimos é o mais barato, é bem provável que ele seja de uma tarifa que não inclua bagagem despachada gratuitamente. Minha sugestão é sempre verificar as regras exatas da tarifa no momento da compra da passagem para ter certeza e evitar surpresas no aeroporto.\n\nVocê já tem uma ideia de quantas malas pretende levar, Maria?"
       },
       {
         "type": "human",
-        "content": "sim"
+        "content": "duas"
       },
       {
         "type": "ai",
-        "content": "Aqui estão os dados das passagens encontradas:\nVoo 1: Companhia: Gol, Aeronave: Boeing 737-800, Origem: SLZ, Destino: SSA, Partida: 11:40, Chegada: 13:55, Duração: 2h15m, Escalas: Direto, Preço: EUR 73.17\nVoo 2: Companhia: Azul, Aeronave: Airbus A320, Origem: SLZ, Destino: SSA, Partida: 04:45, Chegada: 11:35, Duração: 6h50m, Escalas: 1 escala, Preço: EUR 170.79\nVoo 3: Companhia: Azul, Aeronave: Airbus A320, Origem: SLZ, Destino: SSA, Partida: 02:35, Chegada: 09:35, Duração: 7h, Escalas: 1 escala, Preço: EUR 170.79\nVoo 4: Companhia: Azul, Aeronave: Airbus A320, Origem: SLZ, Destino: SSA, Partida: 17:55, Chegada: 02:10, Duração: 8h15m, Escalas: 1 escala, Preço: EUR 170.79\nVoo 5: Companhia: Azul, Aeronave: Airbus A320, Origem: SLZ, Destino: SSA, Partida: 02:35, Chegada: 13:00, Duração: 10h25m, Escalas: 1 escala, Preço: EUR 170.79"
+        "content": "Entendi, Maria! Se você pretende levar duas malas despachadas, é importante saber que o voo da Gol que vimos, por ser o mais barato (EUR 287.5), provavelmente não inclui bagagem despachada gratuitamente na tarifa.\n\nIsso significa que você precisaria **comprar o serviço de bagagem despachada à parte** para cada uma das suas duas malas. Geralmente, cada mala despachada tem um limite de peso de 23 kg.\n\nOs valores para adicionar bagagem variam, mas é algo que você consegue fazer diretamente com a Gol, seja no momento da compra da passagem ou depois, pelo site ou aplicativo deles.\n\nVocê gostaria de considerar essa opção com a Gol, mesmo com o custo extra das malas, ou prefere que eu veja se alguma das outras opções de voo (como a LATAM ou Azul que apareceram na busca) talvez já inclua bagagem na tarifa, mesmo que o preço inicial seja um pouco maior? 😊"
       },
       {
         "type": "human",
-        "content": "me fale sobre o voo 4"
+        "content": "precisa de algo mais para fazer essa viagem?"
       },
       {
         "type": "ai",
-        "content": "Claro, Vivi! Vamos falar sobre o Voo 4.\n\nEle é operado pela **Azul**, em um **Airbus A320**.\n\n*   **Origem:** São Luís (SLZ)\n*   **Destino:** Salvador (SSA)\n*   **Partida:** 17:55 (5:55 da tarde)\n*   **Chegada:** 02:10 (2:10 da manhã do dia seguinte)\n*   **Duração:** 8 horas e 15 minutos\n*   **Escalas:** Possui 1 escala\n*   **Preço:** EUR 170.79\n\nÉ uma opção que chega de madrugada em Salvador, então é bom considerar isso para o seu planejamento de chegada!\n\nQuer saber mais sobre algum outro voo ou sobre Salvador? 😊"
+        "content": "Essa é uma ótima pergunta, Maria! Para a sua viagem para **Fortaleza**, além das passagens e das malas, você vai precisar de algumas coisas básicas para que tudo corra bem:\n\n1.  **Documento de Identidade:** Para voos domésticos, você precisará de um documento de identificação com foto, como RG ou CNH.\n2.  **Passagens Aéreas:** Claro, as passagens que estamos conversando sobre!\n3.  **Hospedagem:** Você já pensou onde vai ficar em Fortaleza? É bom ter isso reservado para os seus 3 dias por lá.\n4.  **Dinheiro/Cartões:** Para suas despesas com alimentação, passeios e compras.\n5.  **Roupas e Acessórios:** Fortaleza é quente, então roupas leves, protetor solar, óculos de sol e chapéu são essenciais! E claro, roupa de banho para as praias.\n6.  **Itens Pessoais:** Seus produtos de higiene, medicamentos de uso contínuo, etc.\n\nVocê já tem a hospedagem em mente, Maria? Ou quer que eu te dê algumas dicas de bairros ou tipos de acomodação em Fortaleza? 😊"
       },
       {
         "type": "human",
-        "content": "eu queria saber o valor em reais"
+        "content": "alguma pousada?"
       },
       {
         "type": "ai",
-        "content": "Entendi, Vivi! O valor de EUR 170.79 está em Euros.\n\nPara saber o valor exato em Reais, você precisaria verificar a cotação do Euro no dia da compra, pois ela varia bastante. A taxa de câmbio utilizada pela companhia aérea ou pela plataforma de compra também pode influenciar.\n\nVocê pode usar um conversor de moedas online para ter uma estimativa mais precisa no momento! 😊"
+        "content": "Que ótima ideia, Maria! Ficar em uma pousada pode ser uma experiência super charmosa e acolhedora em Fortaleza. A cidade tem várias opções, desde as mais simples até as mais charmosas.\n\nPensando em localização e no que os turistas geralmente procuram, aqui vão algumas sugestões de áreas e tipos de pousadas:\n\n1.  **Pousadas na Praia de Iracema:** Essa é uma área super popular, bem no coração da orla. É animada, tem muitos bares, restaurantes e fica perto do Centro Dragão do Mar. As pousadas por lá costumam ter um clima mais boêmio e descontraído.\n    *   **Exemplo de estilo:** Pousadas com decoração mais rústica ou colorida, algumas com piscina pequena e café da manhã caseiro.\n\n2.  **Pousadas em Meireles/Mucuripe:** Essas áreas são um pouco mais sofisticadas e tranquilas que a Praia de Iracema, mas ainda assim na orla e com fácil acesso a tudo. São ótimas para caminhadas na Beira Mar e perto de bons restaurantes.\n    *   **Exemplo de estilo:** Pousadas mais modernas ou com um toque de design, algumas com vista para o mar e serviços mais completos.\n\n3.  **Pousadas mais afastadas (para quem busca tranquilidade):** Se você prefere algo mais calmo e não se importa em se deslocar um pouco, existem pousadas charmosas em bairros residenciais ou até mesmo mais perto da Praia do Futuro, se o foco for total na praia.\n\nPara te dar nomes específicos, eu precisaria saber um pouco mais do seu estilo, Maria. Você prefere algo mais:\n*   Perto da agitação e vida noturna?\n*   Mais tranquilo e familiar?\n*   Com foco em custo-benefício ou algo mais luxuoso?\n\nAssim consigo te dar sugestões mais certeiras! 😊"
       },
       {
         "type": "human",
-        "content": "voce consegue fazer a conversão?"
+        "content": "mais tranquilo"
       },
       {
         "type": "ai",
-        "content": "Ah, Vivi, essa é uma ótima pergunta!\n\nComo as taxas de câmbio entre o Euro e o Real mudam bastante ao longo do dia e dependem de onde você vai comprar a passagem (cada site ou companhia pode usar uma cotação ligeiramente diferente), eu não consigo te dar um valor exato em Reais em tempo real.\n\nMinha função é te ajudar com as informações da viagem e as opções de voo, mas para a conversão de moedas, o ideal é você consultar um site de conversão de moedas ou o seu banco no momento da compra para ter o valor mais preciso! 😊"
+        "content": "Ótimo, Maria! Se a sua preferência é por algo mais tranquilo, podemos focar em áreas que oferecem mais sossego, mas sem te deixar muito longe das principais atrações.\n\nPara pousadas mais calmas em Fortaleza, eu te sugeriria considerar:\n\n1.  **Meireles (parte mais residencial ou ruas internas):** Embora seja na orla, Meireles tem ruas mais tranquilas e arborizadas, um pouco afastadas da agitação da Beira Mar, mas ainda com fácil acesso a pé ou com uma curta corrida de carro. As pousadas por lá tendem a ser mais charmosas, com um ambiente mais reservado.\n    *   **O que esperar:** Pousadas com jardins, piscinas mais privativas, e um clima mais de \"casa\".\n\n2.  **Aldeota/Varjota:** Esses são bairros mais residenciais e nobres de Fortaleza, não ficam diretamente na praia, mas são muito bem localizados, com excelentes restaurantes (especialmente na Varjota, que é um polo gastronômico) e fácil acesso à orla de táxi ou aplicativo. As pousadas aqui tendem a ser mais exclusivas e com um ambiente bem calmo.\n    *   **O que esperar:** Pousadas boutique, com foco em conforto e privacidade, ideais para quem busca relaxar após um dia de passeios.\n\n3.  **Pousadas mais afastadas na Praia do Futuro (lado mais calmo):** A Praia do Futuro é famosa pelas barracas grandes, mas existem algumas pousadas e hotéis menores em áreas mais residenciais da praia que oferecem mais tranquilidade e a vantagem de estar bem pertinho do mar.\n    *   **O que esperar:** Um ambiente mais praiano e relaxado, ideal para quem quer acordar e já estar na praia.\n\nVocê tem alguma preferência entre estar mais perto da orla (mesmo que em uma parte mais tranquila) ou em um bairro mais residencial, mas com fácil acesso à praia? Assim consigo te dar sugestões ainda mais específicas, Maria! 😊"
       },
       {
         "type": "human",
-        "content": "vc consegue pesquisar a taxa atual?"
+        "content": "ok, obrigada"
       },
       {
         "type": "ai",
-        "content": "Ah, Vivi, essa é uma pergunta super relevante para o seu planejamento!\n\nNo entanto, como Mochi, meu foco principal é te ajudar com informações sobre viagens, destinos, voos e passagens. Pesquisar taxas de câmbio em tempo real está um pouquinho fora do meu escopo, perdão.\n\nPara ter o valor mais atualizado do Euro em Reais, sugiro que você consulte um site de conversão de moedas ou o seu banco no momento em que for realizar a compra da passagem.\n\nMas me diga, Vivi, você gostaria de saber mais detalhes sobre Salvador, como pontos turísticos ou dicas de lá, já que você está planejando essa viagem? Ou talvez queira comparar o Voo 4 com alguma outra opção? 😊"
-      },
-      {
-        "type": "human",
-        "content": "ok, tudo bem. quantas malas posso levar?"
-      },
-      {
-        "type": "ai",
-        "content": "Essa é uma excelente pergunta, Vivi! É super importante saber sobre a bagagem para não ter surpresas.\n\nA quantidade de malas que você pode levar e o peso permitido (tanto para bagagem de mão quanto para bagagem despachada) **depende muito da companhia aérea e da tarifa que você escolher**.\n\nPor exemplo, o Voo 4 que você perguntou é da **Azul**. Geralmente, as companhias aéreas brasileiras permitem uma bagagem de mão pequena (mochila ou bolsa) e uma mala de mão (até 10kg) na cabine, mas para a bagagem despachada, muitas tarifas mais básicas não incluem mala, e você precisa comprar à parte.\n\nMinha sugestão é que, ao escolher o voo (seja o Voo 4 da Azul ou outro), você verifique diretamente no site da companhia aérea ou nas informações da tarifa específica que você vai comprar. Lá eles detalham certinho as regras de bagagem para cada tipo de passagem.\n\nQuer que eu te ajude com mais alguma informação sobre os voos ou sobre Salvador? 😊"
-      },
-      {
-        "type": "human",
-        "content": "posso andar pelo aviao?"
-      },
-      {
-        "type": "ai",
-        "content": "Sim, Vivi, você pode andar pelo avião! 😊\n\nÉ super recomendado se levantar e dar uma esticadinha nas pernas, principalmente em voos mais longos como o seu para Salvador, que tem uma escala. Isso ajuda a circulação e evita o cansaço.\n\nSó lembre-se de algumas coisas:\n*   Você só pode se levantar quando o sinal de \"apertar cintos\" estiver desligado.\n*   Durante a decolagem, pouso e quando o avião estiver passando por alguma turbulência, é obrigatório permanecer sentado com o cinto afivelado.\n*   Sempre seja gentil e cuidadosa ao passar pelos corredores, para não incomodar os outros passageiros ou a tripulação.\n\nÉ uma ótima forma de se sentir mais confortável durante a viagem!\n\nTem mais alguma dúvida sobre o voo ou sobre o que fazer em Salvador? 😊"
-      },
-      {
-        "type": "human",
-        "content": "voce consegue me dizer hoteis bons pra ficar em salvador?"
-      },
-      {
-        "type": "ai",
-        "content": "Com certeza, Vivi! Salvador tem uma rede hoteleira super variada, para todos os gostos e bolsos. Para te ajudar a escolher, vou te dar algumas sugestões em áreas diferentes, que oferecem experiências distintas:\n\n1.  **Para quem busca história e charme (próximo ao Pelourinho e Centro Histórico):**\n    *   **Hotel Fasano Salvador:** Se você busca luxo e uma experiência sofisticada, o Fasano é uma excelente opção. Fica em um prédio histórico na Praça Castro Alves, com uma vista incrível da Baía de Todos os Santos.\n    *   **Pousada do Pilar:** Uma opção mais charmosa e aconchegante, com um toque mais autêntico, pertinho do Pelourinho.\n\n2.  **Para quem quer praia e agito (na Barra):**\n    *   **Monte Pascoal Praia Hotel:** Fica de frente para o Farol da Barra, com uma localização privilegiada para quem quer curtir a praia e o calçadão.\n    *   **Grande Hotel da Barra:** Um clássico de Salvador, também na Barra, com uma arquitetura imponente e acesso fácil à praia.\n\n3.  **Para quem prefere modernidade e boa gastronomia (no Rio Vermelho):**\n    *   **Mercure Salvador Rio Vermelho:** Uma opção mais moderna e confortável, localizada no bairro boêmio do Rio Vermelho, conhecido por seus bares, restaurantes e vida noturna.\n    *   **Novotel Salvador Rio Vermelho:** Outra boa escolha na região, com boa infraestrutura e fácil acesso às atrações do bairro.\n\n4.  **Para quem busca conforto e conveniência (na Pituba/Itaigara - mais comercial):**\n    *   **Fiesta Bahia Hotel:** Um hotel grande, com boa estrutura de lazer, ideal para quem busca conforto e está em uma área mais central e comercial, com fácil acesso a shoppings.\n\nMinha dica é sempre dar uma olhadinha nas avaliações recentes e na localização no mapa para ver qual se encaixa melhor no seu estilo de viagem e nos pontos que você mais quer visitar!\n\nQual tipo de experiência você busca em Salvador, Vivi? Assim posso refinar ainda mais as sugestões! 😊"
-      },
-      {
-        "type": "human",
-        "content": "que legal"
-      },
-      {
-        "type": "ai",
-        "content": "Que bom que gostou das sugestões, Vivi! Fico feliz em ajudar! 😊\n\nAlgum desses hotéis te chamou mais atenção, ou você tem alguma preferência de bairro ou tipo de hospedagem em mente?\n\nE já que estamos falando de Salvador, você gostaria de saber mais sobre os pontos turísticos imperdíveis, a culinária local ou talvez algumas dicas de segurança para aproveitar a cidade ao máximo? Me diga o que mais te interessa!"
-      },
-      {
-        "type": "human",
-        "content": "vamos ficar com o voo 4, mas depois eu compro ta?"
-      },
-      {
-        "type": "ai",
-        "content": "Entendido, Vivi! Que ótimo que o Voo 4 te agradou! Fico feliz que tenhamos encontrado uma boa opção para você. E sem problemas, você pode comprar quando for o melhor momento. 😊\n\nAgora que já temos uma ideia do voo, que tal começarmos a planejar o que fazer em Salvador? A cidade é cheia de lugares incríveis!\n\nVocê gostaria de saber sobre:\n*   Os **pontos turísticos** mais famosos?\n*   Onde encontrar as **lojas** mais legais ou mercados de artesanato?\n*   Dicas de **restaurantes** para experimentar a culinária baiana?\n*   Ou talvez algumas **dicas gerais** para aproveitar a viagem?\n\nMe diga o que mais te anima para sua aventura em Salvador!"
-      },
-      {
-        "type": "human",
-        "content": "dicas gerais"
-      },
-      {
-        "type": "ai",
-        "content": "Ah, Vivi, ótimas pedidas! Dicas gerais são super importantes para aproveitar a viagem ao máximo e sem perrengues. Vamos lá, preparei algumas para você:\n\n1.  **Hidrate-se e Proteja-se do Sol:** Salvador é quente e úmida o ano todo, especialmente em outubro. Beba bastante água, use protetor solar, chapéu ou boné e óculos de sol. Roupas leves e confortáveis são suas melhores amigas!\n2.  **Calçados Confortáveis:** Você vai andar bastante, principalmente se for explorar o Pelourinho e as ladeiras. Tênis ou sandálias confortáveis são essenciais.\n3.  **Transporte:** Para se locomover, aplicativos como Uber e 99 funcionam super bem e são práticos. Táxis também são uma opção, mas sempre prefira os credenciados.\n4.  **Segurança:** Como em qualquer cidade grande, é bom ficar atenta. Evite andar com objetos de valor muito expostos (celulares, joias), especialmente em locais muito movimentados ou à noite. Prefira deixar documentos e grandes quantias de dinheiro no hotel e leve apenas o necessário.\n5.  **Experimente a Culinária Local:** Salvador é um paraíso gastronômico! Não deixe de provar acarajé, moqueca, bobó de camarão e cocada. Mas, para comidas de rua, escolha locais com boa aparência e movimento.\n6.  **Dinheiro em Espécie:** Embora muitos lugares aceitem cartão, ter um pouco de dinheiro em espécie é sempre bom para pequenos gastos, feiras de artesanato ou para dar gorjeta.\n7.  **Aproveite a Cultura:** O povo baiano é super acolhedor e a cultura é vibrante. Esteja aberta a conversar, ouvir a música e sentir a energia da cidade.\n\nCom essas dicas, tenho certeza que sua experiência em Salvador será ainda mais incrível, Vivi!\n\nTem mais alguma coisa que você gostaria de saber? Talvez sobre os melhores lugares para comer ou onde encontrar artesanato local? 😊"
-      },
-      {
-        "type": "human",
-        "content": "ok, obrigada, boa noite"
-      },
-      {
-        "type": "ai",
-        "content": "De nada, Vivi! Fico muito feliz em ter te ajudado! 😊\n\nQualquer outra dúvida ou se precisar de mais alguma dica para sua viagem a Salvador, é só me chamar, viu?\n\nTenha uma ótima noite! Durma bem!"
-      },
-      {
-        "type": "human",
-        "content": "sair"
-      }
-    ]
-  },
-  "virginia": {
-    "nome": "virginia",
-    "finalidade": "lazer",
-    "dados": {
-      "origem": "Fortaleza",
-      "destino": "Sao Paulo",
-      "dia": "03 de agosto"
-    },
-    "preferencias": {
-      "clima": null
-    },
-    "passagens": {
-      "busca_20250727_231402": "Voo 1: Companhia: LATAM, Aeronave: Airbus A321, Origem: FOR, Destino: GRU, Partida: 07:25, Chegada: 10:50, Duração: 3h25m, Escalas: Direto, Preço: EUR 213.62\nVoo 2: Companhia: LATAM, Aeronave: Airbus A320, Origem: FOR, Destino: GRU, Partida: 03:05, Chegada: 06:35, Duração: 3h30m, Escalas: Direto, Preço: EUR 213.62\nVoo 3: Companhia: LATAM, Aeronave: Airbus A320, Origem: FOR, Destino: GRU, Partida: 04:45, Chegada: 08:15, Duração: 3h30m, Escalas: Direto, Preço: EUR 213.62\nVoo 4: Companhia: LATAM, Aeronave: Airbus A320, Origem: FOR, Destino: GRU, Partida: 11:50, Chegada: 15:20, Duração: 3h30m, Escalas: Direto, Preço: EUR 213.62\nVoo 5: Companhia: LATAM, Aeronave: Airbus A321, Origem: FOR, Destino: GRU, Partida: 14:35, Chegada: 18:05, Duração: 3h30m, Escalas: Direto, Preço: EUR 213.62"
-    },
-    "chat_history": [
-      {
-        "type": "human",
-        "content": "quero viajar para sao paulo, de fortaleza, dia 08 de junho de 2023"
-      },
-      {
-        "type": "ai",
-        "content": "Olá, Virginia! Que bom te encontrar por aqui! Eu sou o Mochi, seu assistente de viagens pessoal, e estou aqui para te ajudar a planejar a sua próxima aventura. Pelo que vejo, ainda não temos um histórico de buscas, mas vamos começar a criar um agora mesmo!\n\nVocê mencionou que quer viajar para São Paulo, saindo de Fortaleza, no dia 8 de junho de 2023. Virginia, percebi que essa data já passou, pois hoje é 27 de julho de 2025.\n\nQue tal me dizer para quando você gostaria de planejar essa viagem para São Paulo? Assim, consigo te ajudar a encontrar as melhores opções!"
-      },
-      {
-        "type": "human",
-        "content": "dia 03 de agosto"
-      },
-      {
-        "type": "ai",
-        "content": "Entendido, Virginia! Então, a sua viagem para São Paulo, saindo de Fortaleza, seria para o dia 3 de agosto de 2025, certo?\n\nPara que eu possa te ajudar a encontrar as melhores passagens, você teria alguma preferência de horário ou alguma finalidade específica para essa viagem? Por exemplo, é a trabalho, lazer, visitar alguém? Saber disso pode me ajudar a refinar a busca! 😊"
-      },
-      {
-        "type": "human",
-        "content": "lazer"
-      },
-      {
-        "type": "ai",
-        "content": "Perfeito, Virginia! Viagem para São Paulo a lazer, saindo de Fortaleza no dia 3 de agosto de 2025. Que maravilha!\n\nCom todas essas informações, já posso acionar o agente para buscar as passagens disponíveis para você.\n\nSó para confirmar, Virginia, você gostaria que eu procurasse voos de ida e volta, ou apenas ida? E há alguma preferência de horário para a volta, caso seja ida e volta?"
-      },
-      {
-        "type": "human",
-        "content": "só ida"
-      },
-      {
-        "type": "ai",
-        "content": "Ótimo, Virginia! Então, para recapitular:\n\n*   **Nome:** Virginia\n*   **Origem:** Fortaleza\n*   **Destino:** São Paulo\n*   **Data:** 3 de agosto de 2025\n*   **Finalidade:** Lazer\n*   **Tipo de Viagem:** Somente ida\n\nCom todas essas informações confirmadas, vou acionar o agente agora mesmo para buscar as passagens de ida para São Paulo no dia 3 de agosto de 2025.\n\nAssim que tivermos as opções, te aviso! Enquanto isso, já pensou no que gostaria de fazer em São Paulo? Posso te dar algumas dicas de pontos turísticos, lojas famosas ou até mesmo restaurantes! 😉"
-      },
-      {
-        "type": "human",
-        "content": "ok, buscar voos"
-      },
-      {
-        "type": "ai",
-        "content": "Perfeito, Virginia! Entendido.\n\nEstou acionando o agente agora mesmo para buscar os voos de ida de Fortaleza para São Paulo no dia 3 de agosto de 2025.\n\nAssim que ele me trouxer as opções, eu te apresento! Enquanto aguardamos, você tem alguma curiosidade sobre São Paulo? Posso te contar sobre alguns pontos turísticos imperdíveis, como o Parque Ibirapuera ou a Avenida Paulista, ou até mesmo sobre as famosas ruas de compras! 😊"
-      },
-      {
-        "type": "human",
-        "content": "ok, vou esperar as passagens"
-      },
-      {
-        "type": "ai",
-        "content": "Certo, Virginia! Pode deixar, estou de olho aqui e assim que o agente me retornar com as opções de voos de Fortaleza para São Paulo no dia 3 de agosto, eu te aviso na hora!\n\nEnquanto isso, que tal começarmos a sonhar um pouco com a sua viagem? São Paulo é uma cidade incrível, com opções para todos os gostos.\n\nVocê já tem alguma ideia do que gostaria de fazer por lá? Se gosta de arte, o MASP é imperdível. Se prefere um passeio ao ar livre, o Parque Ibirapuera é maravilhoso. E para compras, a Rua Oscar Freire é famosa pelas lojas de grife, mas também há opções mais populares como a 25 de Março.\n\nMe diga o que te interessa mais, e posso te dar umas dicas! 😊"
-      },
-      {
-        "type": "human",
-        "content": "buscar voos"
-      },
-      {
-        "type": "ai",
-        "content": "Entendido, Virginia! Já estou com a solicitação para buscar os voos de Fortaleza para São Paulo no dia 3 de agosto de 2025, apenas ida, para sua viagem de lazer.\n\nO agente está trabalhando para encontrar as melhores opções para você. Assim que ele me retornar com os resultados, eu te apresento todas as passagens disponíveis!\n\nEnquanto aguardamos, você tem alguma curiosidade específica sobre São Paulo? Por exemplo, sobre a culinária local, a vida noturna, ou talvez algum bairro que você queira conhecer? Posso te dar algumas dicas para aproveitar ao máximo sua estadia! 😊"
-      },
-      {
-        "type": "human",
-        "content": "sim"
-      },
-      {
-        "type": "ai",
-        "content": "Aqui estão os dados das passagens encontradas:\nVoo 1: Companhia: LATAM, Aeronave: Airbus A321, Origem: FOR, Destino: GRU, Partida: 07:25, Chegada: 10:50, Duração: 3h25m, Escalas: Direto, Preço: EUR 213.62\nVoo 2: Companhia: LATAM, Aeronave: Airbus A320, Origem: FOR, Destino: GRU, Partida: 03:05, Chegada: 06:35, Duração: 3h30m, Escalas: Direto, Preço: EUR 213.62\nVoo 3: Companhia: LATAM, Aeronave: Airbus A320, Origem: FOR, Destino: GRU, Partida: 04:45, Chegada: 08:15, Duração: 3h30m, Escalas: Direto, Preço: EUR 213.62\nVoo 4: Companhia: LATAM, Aeronave: Airbus A320, Origem: FOR, Destino: GRU, Partida: 11:50, Chegada: 15:20, Duração: 3h30m, Escalas: Direto, Preço: EUR 213.62\nVoo 5: Companhia: LATAM, Aeronave: Airbus A321, Origem: FOR, Destino: GRU, Partida: 14:35, Chegada: 18:05, Duração: 3h30m, Escalas: Direto, Preço: EUR 213.62"
-      },
-      {
-        "type": "human",
-        "content": "sim"
-      },
-      {
-        "type": "ai",
-        "content": "Ótimo, Virginia! Que bom que você está aqui para ver as opções!\n\nEntão, como te mostrei, temos algumas opções de voos diretos da LATAM de Fortaleza para São Paulo (GRU) no dia 3 de agosto, todos com o mesmo preço de EUR 213.62.\n\nOs horários de partida são:\n*   **Voo 1:** 07:25 (chegada 10:50)\n*   **Voo 2:** 03:05 (chegada 06:35)\n*   **Voo 3:** 04:45 (chegada 08:15)\n*   **Voo 4:** 11:50 (chegada 15:20)\n*   **Voo 5:** 14:35 (chegada 18:05)\n\nAlgum desses horários te agrada mais, Virginia? Ou você gostaria de saber mais detalhes sobre algum deles?\n\nE aproveitando que você disse \"sim\" antes sobre ter curiosidade sobre São Paulo, o que você gostaria de saber? Podemos falar sobre os melhores lugares para comer, passeios culturais, ou talvez dicas de transporte por lá! 😊"
-      },
-      {
-        "type": "human",
-        "content": "sair"
-      },
-      {
-        "type": "human",
-        "content": "oii"
-      },
-      {
-        "type": "ai",
-        "content": "Olá de novo, Virginia! Que bom te ver por aqui! 😊\n\nPelo que vejo, já te apresentei as opções de voos diretos da LATAM de Fortaleza para São Paulo no dia 3 de agosto. Lembra? Temos voos saindo em diversos horários, como 03:05, 04:45, 07:25, 11:50 e 14:35, todos pelo mesmo valor de EUR 213.62.\n\nVocê conseguiu dar uma olhadinha neles? Algum desses horários te interessou mais para a sua viagem de lazer para São Paulo?\n\nE, como você tinha demonstrado interesse antes, posso te dar algumas dicas sobre o que fazer por lá enquanto você decide o voo! O que você gostaria de saber sobre São Paulo? 😊"
-      },
-      {
-        "type": "human",
-        "content": "vc ja buscou"
-      },
-      {
-        "type": "ai",
-        "content": "Sim, Virginia! Eu já busquei e te apresentei as opções de voos de Fortaleza para São Paulo no dia 3 de agosto.\n\nAqui estão elas novamente, para facilitar a sua escolha:\n\n*   **Voo 1 (LATAM):** Partida às 03:05, chegada às 06:35 (direto)\n*   **Voo 2 (LATAM):** Partida às 04:45, chegada às 08:15 (direto)\n*   **Voo 3 (LATAM):** Partida às 07:25, chegada às 10:50 (direto)\n*   **Voo 4 (LATAM):** Partida às 11:50, chegada às 15:20 (direto)\n*   **Voo 5 (LATAM):** Partida às 14:35, chegada às 18:05 (direto)\n\nTodos esses voos têm o mesmo preço de EUR 213.62.\n\nQual desses horários se encaixa melhor nos seus planos de viagem para São Paulo, Virginia? 😊"
-      },
-      {
-        "type": "human",
-        "content": "voo 5"
-      },
-      {
-        "type": "ai",
-        "content": "Perfeito, Virginia! Você escolheu o **Voo 5**!\n\nEntão, para confirmar, sua viagem será:\n\n*   **Companhia:** LATAM\n*   **Origem:** Fortaleza\n*   **Destino:** São Paulo (GRU)\n*   **Data:** 3 de agosto de 2025\n*   **Partida:** 14:35\n*   **Chegada:** 18:05\n*   **Duração:** 3h30m (direto)\n*   **Preço:** EUR 213.62\n\nExcelente escolha, Virginia! Com a chegada no final da tarde, você terá tempo para se instalar e já começar a aproveitar a noite paulistana, se quiser!\n\nVocê gostaria de prosseguir com a reserva deste voo, ou tem mais alguma dúvida sobre ele? E, claro, se quiser algumas dicas do que fazer em São Paulo, estou aqui para ajudar! 😊"
-      },
-      {
-        "type": "human",
-        "content": "dicas do q fazer, so tenho 2 dias"
-      },
-      {
-        "type": "ai",
-        "content": "Que ótimo, Virginia! Com a sua chegada em São Paulo no dia 3 de agosto às 18:05, você terá a noite da chegada e mais dois dias inteiros para explorar a cidade. É um tempo bom para sentir o ritmo de São Paulo!\n\nAqui vai uma sugestão de roteiro para aproveitar ao máximo seus dois dias:\n\n**Noite da Chegada (3 de agosto):**\n*   **Jantar e Passeio Leve:** Depois de se instalar, sugiro um jantar em um dos bairros mais charmosos e com boa gastronomia, como **Pinheiros** ou **Vila Madalena**. São Paulo é famosa pela sua culinária, então aproveite para experimentar algo delicioso! Você pode dar uma volta pelas ruas iluminadas e sentir a energia da cidade.\n\n**Dia 1 Completo (4 de agosto): Cultura e Cartões Postais**\n*   **Manhã na Avenida Paulista:** Comece o dia na icônica **Avenida Paulista**. Você pode visitar o **MASP (Museu de Arte de São Paulo)**, que tem um acervo incrível, ou simplesmente caminhar pela avenida, observando a arquitetura e o movimento. O **Parque Trianon** é um oásis verde no meio da agitação.\n*   **Almoço e Centro Histórico:** Siga para o **Centro Histórico**. Almoce no famoso **Mercado Municipal** (o sanduíche de mortadela e o pastel de bacalhau são clássicos!). Depois, explore a **Catedral da Sé**, o **Theatro Municipal** e o **Farol Santander** (antigo Banespa), que oferece uma vista panorâmica espetacular da cidade.\n*   **Final de Tarde/Noite:** Se ainda tiver energia, a **Rua 25 de Março** (para compras populares) ou o **Bairro da Liberdade** (cultura japonesa, feirinha de fim de semana se for sábado/domingo) são ótimas opções. Para o jantar, a Liberdade tem muitos restaurantes asiáticos deliciosos.\n\n**Dia 2 Completo (5 de agosto): Natureza, Arte e Charme**\n*   **Manhã no Parque Ibirapuera:** Dedique a manhã ao **Parque Ibirapuera**, o pulmão verde de São Paulo. É perfeito para uma caminhada, andar de bicicleta ou visitar alguns dos museus que ficam dentro dele, como o **MAM (Museu de Arte Moderna)** ou o **Museu Afro Brasil**.\n*   **Almoço e Vila Madalena/Pinheiros:** Almoce em **Vila Madalena** ou **Pinheiros**. Esses bairros são conhecidos por suas ruas charmosas, galerias de arte, grafites (especialmente no Beco do Batman na Vila Madalena) e uma infinidade de bares e restaurantes descolados.\n*   **Final de Tarde/Noite:** Aproveite para explorar as lojinhas e cafés desses bairros. Para o jantar, a variedade é enorme, desde alta gastronomia até botecos charmosos. Se gostar de vida noturna, a Vila Madalena é um ótimo lugar para curtir.\n\nLembre-se que São Paulo é enorme, então o ideal é focar em regiões para otimizar o tempo de deslocamento.\n\nO que você achou dessas sugestões, Virginia? Tem algum interesse específico, como museus, compras, gastronomia, ou vida noturna, que eu possa focar mais? 😊"
-      },
-      {
-        "type": "human",
-        "content": "ficaram legais"
-      },
-      {
-        "type": "ai",
-        "content": "Que bom que gostou das dicas, Virginia! Fico feliz em ajudar a planejar esses dois dias intensos e divertidos em São Paulo!\n\nCom a sua chegada no dia 3 de agosto e a saída dois dias depois, você vai conseguir ter um gostinho bem legal da cidade.\n\nTem alguma dessas sugestões que te chamou mais atenção? Ou talvez você tenha algum interesse específico, como um tipo de culinária que queira experimentar, ou um estilo de compras que prefira? Me diga, e posso te dar mais detalhes ou outras opções! 😊"
-      },
-      {
-        "type": "human",
-        "content": "nao, obrigada.sair"
-      },
-      {
-        "type": "ai",
-        "content": "De nada, Virginia! Fico muito feliz em ter te ajudado a planejar sua viagem para São Paulo e a escolher o voo.\n\nSe precisar de mais alguma coisa para essa viagem ou para futuras aventuras, é só me chamar! Estarei aqui para te ajudar.\n\nTenha uma ótima viagem para São Paulo! 😊"
-      },
-      {
-        "type": "human",
-        "content": "sair"
-      }
-    ]
-  },
-  "lala": {
-    "nome": "lala",
-    "finalidade": null,
-    "dados": {
-      "origem": "Sao Luis",
-      "destino": "Coreia Do Sul",
-      "dia": "09 de outubro"
-    },
-    "preferencias": {
-      "clima": null
-    },
-    "passagens": {
-      "busca_20250728_000708": "Voo 1: Companhia: LATAM, Aeronave: Airbus A321, Origem: SLZ, Destino: ICN, Partida: 17:00, Chegada: 06:00, Duração: 49h, Escalas: 2 escalas, Preço: EUR 1068.79\nVoo 2: Companhia: LATAM, Aeronave: Airbus A320, Origem: SLZ, Destino: ICN, Partida: 03:15, Chegada: 06:00, Duração: 38h45m, Escalas: 2 escalas, Preço: EUR 1146.79\nVoo 3: Companhia: LATAM, Aeronave: Airbus A321, Origem: SLZ, Destino: ICN, Partida: 17:00, Chegada: 17:00, Duração: 36h, Escalas: 2 escalas, Preço: EUR 1166.72\nVoo 4: Companhia: LATAM, Aeronave: Airbus A321, Origem: SLZ, Destino: ICN, Partida: 11:40, Chegada: 17:00, Duração: 41h20m, Escalas: 2 escalas, Preço: EUR 1166.72\nVoo 5: Companhia: Gol, Aeronave: Boeing 737-800, Origem: SLZ, Destino: ICN, Partida: 03:15, Chegada: 07:50, Duração: 40h35m, Escalas: 2 escalas, Preço: EUR 1209.91"
-    },
-    "chat_history": [
-      {
-        "type": "human",
-        "content": "oi"
-      },
-      {
-        "type": "ai",
-        "content": "Olá, Lala! Que bom te ver por aqui! Eu sou o Mochi, seu assistente de viagens pessoal. Já dei uma olhadinha no nosso histórico e parece que estamos começando do zero, o que é ótimo!\n\nEstou aqui para te ajudar a planejar a sua próxima aventura, seja para relaxar, explorar ou o que mais você tiver em mente. O que você gostaria de fazer hoje? Para onde você está pensando em viajar? 😊"
-      },
-      {
-        "type": "human",
-        "content": "para moscou, de sao luis, dia 09 de outubro"
-      },
-      {
-        "type": "ai",
-        "content": "Que ótimo, Lala! Moscou é um destino fascinante!\n\nEntão, só para confirmar, você está planejando uma viagem de São Luís para Moscou no dia 09 de outubro. Certo?\n\nPara que eu possa te ajudar a encontrar as melhores opções, você poderia me dizer o ano para esse dia 09 de outubro? E, se não for muito incômodo, qual o principal motivo da sua viagem para Moscou? É a trabalho, lazer, visitar alguém? Saber disso me ajuda a te dar dicas mais personalizadas!\n\nAh, e só para te avisar, eu consigo buscar voos de ida, ok?"
-      },
-      {
-        "type": "human",
-        "content": "sim"
-      },
-      {
-        "type": "human",
-        "content": "para coreia do sul"
-      },
-      {
-        "type": "ai",
-        "content": "Ah, entendi, Lala! Mudança de planos, então! Coreia do Sul é uma escolha incrível, cheia de cultura, tecnologia e paisagens lindas!\n\nEntão, só para eu ter certeza que anotei tudo direitinho: você quer viajar de São Luís para a Coreia do Sul no dia 09 de outubro.\n\nPara qual ano seria essa viagem, Lala? E qual o principal motivo da sua viagem para a Coreia do Sul? É a trabalho, lazer, ou algo mais específico? Saber disso me ajuda a te dar as melhores dicas! 😊"
-      },
-      {
-        "type": "human",
-        "content": "sim"
-      },
-      {
-        "type": "ai",
-        "content": "Aqui estão os dados das passagens encontradas:\nVoo 1: Companhia: LATAM, Aeronave: Airbus A321, Origem: SLZ, Destino: ICN, Partida: 17:00, Chegada: 06:00, Duração: 49h, Escalas: 2 escalas, Preço: EUR 1068.79\nVoo 2: Companhia: LATAM, Aeronave: Airbus A320, Origem: SLZ, Destino: ICN, Partida: 03:15, Chegada: 06:00, Duração: 38h45m, Escalas: 2 escalas, Preço: EUR 1146.79\nVoo 3: Companhia: LATAM, Aeronave: Airbus A321, Origem: SLZ, Destino: ICN, Partida: 17:00, Chegada: 17:00, Duração: 36h, Escalas: 2 escalas, Preço: EUR 1166.72\nVoo 4: Companhia: LATAM, Aeronave: Airbus A321, Origem: SLZ, Destino: ICN, Partida: 11:40, Chegada: 17:00, Duração: 41h20m, Escalas: 2 escalas, Preço: EUR 1166.72\nVoo 5: Companhia: Gol, Aeronave: Boeing 737-800, Origem: SLZ, Destino: ICN, Partida: 03:15, Chegada: 07:50, Duração: 40h35m, Escalas: 2 escalas, Preço: EUR 1209.91"
-      },
-      {
-        "type": "human",
-        "content": "que legal, me fale sobre o voo 1, quanto é o valor em reais"
-      },
-      {
-        "type": "ai",
-        "content": "Que bom que gostou, Lala! O Voo 1 parece uma ótima opção!\n\nVamos aos detalhes do Voo 1:\n\n*   **Companhia Aérea:** LATAM\n*   **Aeronave:** Airbus A321\n*   **Origem:** São Luís (SLZ)\n*   **Destino:** Seul, Coreia do Sul (ICN - Aeroporto Internacional de Incheon)\n*   **Partida:** 17:00\n*   **Chegada:** 06:00 (no horário local do destino)\n*   **Duração Total da Viagem:** 49 horas\n*   **Escalas:** 2 escalas\n*   **Preço:** EUR 1068.79\n\nSobre o valor em reais, Lala, usando uma cotação aproximada de hoje (27 de julho de 2025), onde 1 Euro está por volta de R$ 5,80, o valor de EUR 1068.79 seria aproximadamente **R$ 6.199,00**. Lembre-se que essa cotação pode variar um pouco, ok?\n\nQuer saber mais sobre esse voo ou algum outro? Ou talvez algumas dicas sobre a Coreia do Sul? 😊"
-      },
-      {
-        "type": "ai",
-        "content": "Aqui estão os dados das passagens encontradas:\nVoo 1: Companhia: LATAM, Aeronave: Airbus A321, Origem: SLZ, Destino: ICN, Partida: 17:00, Chegada: 06:00, Duração: 49h, Escalas: 2 escalas, Preço: EUR 1068.79\nVoo 2: Companhia: LATAM, Aeronave: Airbus A320, Origem: SLZ, Destino: ICN, Partida: 03:15, Chegada: 06:00, Duração: 38h45m, Escalas: 2 escalas, Preço: EUR 1146.79\nVoo 3: Companhia: Gol, Aeronave: Boeing 737-800, Origem: SLZ, Destino: ICN, Partida: 03:15, Chegada: 07:50, Duração: 40h35m, Escalas: 2 escalas, Preço: EUR 1209.91\nVoo 4: Companhia: Azul, Aeronave: Airbus A320, Origem: SLZ, Destino: ICN, Partida: 17:55, Chegada: 06:00, Duração: 48h5m, Escalas: 2 escalas, Preço: EUR 1224.77\nVoo 5: Companhia: LATAM, Aeronave: Airbus A320, Origem: SLZ, Destino: ICN, Partida: 03:15, Chegada: 07:50, Duração: 40h35m, Escalas: 2 escalas, Preço: EUR 1225.24"
-      },
-      {
-        "type": "human",
-        "content": "entendi, legal"
-      },
-      {
-        "type": "ai",
-        "content": "Que bom que ficou claro, Lala! Fico feliz em ajudar!\n\nJá que você está pensando em ir para a Coreia do Sul, que tal eu te dar algumas dicas sobre o que fazer por lá? Seul, a capital, é um lugar incrível, com uma mistura fascinante de tradição e modernidade.\n\nVocê gostaria de saber sobre pontos turísticos, lugares para compras, ou talvez algumas dicas gerais de viagem para a Coreia do Sul? Ou prefere que a gente veja mais detalhes sobre os voos? 😊"
-      },
-      {
-        "type": "human",
-        "content": "a cotação ta 5?"
-      },
-      {
-        "type": "ai",
-        "content": "Ah, Lala, desculpe se não fui clara! A cotação que usei foi **R$ 5,80** para 1 Euro, não R$ 5,00.\n\nEu mencionei \"por volta de R$ 5,80\" para dar uma estimativa, já que a cotação do Euro para o Real pode variar um pouquinho a cada dia.\n\nEntão, para o Voo 1, o valor de EUR 1068.79 seria aproximadamente **R$ 6.199,00** (1068.79 * 5.80).\n\nFicou mais claro agora, Lala? 😊"
-      },
-      {
-        "type": "human",
-        "content": "a cotação é 6,53 hoje"
-      },
-      {
-        "type": "ai",
-        "content": "Ah, muito obrigado por me corrigir, Lala! É ótimo ter a informação mais atualizada.\n\nCom a cotação de **R$ 6,53** para 1 Euro, o valor do Voo 1 (EUR 1068.79) seria aproximadamente:\n\n1068.79 * 6.53 = **R$ 6.977,00**\n\nObrigado por me manter atualizado, Lala!\n\nAgora que temos o valor mais preciso, você gostaria de explorar mais sobre os voos ou prefere que eu comece a te dar algumas dicas sobre a Coreia do Sul, como pontos turísticos ou lugares para compras? 😊"
-      },
-      {
-        "type": "human",
-        "content": "quais as outras opções q vc me mostrou?"
-      },
-      {
-        "type": "ai",
-        "content": "Claro, Lala! Me desculpe, eu me empolguei com a cotação e esqueci de te relembrar as outras opções!\n\nAqui estão todos os voos que encontrei para você, saindo de São Luís (SLZ) com destino a Seul, Coreia do Sul (ICN), para o dia 09 de outubro:\n\n*   **Voo 1:**\n    *   **Companhia:** LATAM\n    *   **Aeronave:** Airbus A321\n    *   **Partida:** 17:00\n    *   **Chegada:** 06:00\n    *   **Duração:** 49h\n    *   **Escalas:** 2 escalas\n    *   **Preço:** EUR 1068.79 (aproximadamente **R$ 6.977,00** com a cotação de R$ 6,53)\n\n*   **Voo 2:**\n    *   **Companhia:** LATAM\n    *   **Aeronave:** Airbus A320\n    *   **Partida:** 03:15\n    *   **Chegada:** 06:00\n    *   **Duração:** 38h45m\n    *   **Escalas:** 2 escalas\n    *   **Preço:** EUR 1146.79\n\n*   **Voo 3:**\n    *   **Companhia:** Gol\n    *   **Aeronave:** Boeing 737-800\n    *   **Partida:** 03:15\n    *   **Chegada:** 07:50\n    *   **Duração:** 40h35m\n    *   **Escalas:** 2 escalas\n    *   **Preço:** EUR 1209.91\n\n*   **Voo 4:**\n    *   **Companhia:** Azul\n    *   **Aeronave:** Airbus A320\n    *   **Partida:** 17:55\n    *   **Chegada:** 06:00\n    *   **Duração:** 48h5m\n    *   **Escalas:** 2 escalas\n    *   **Preço:** EUR 1224.77\n\n*   **Voo 5:**\n    *   **Companhia:** LATAM\n    *   **Aeronave:** Airbus A320\n    *   **Partida:** 03:15\n    *   **Chegada:** 07:50\n    *   **Duração:** 40h35m\n    *   **Escalas:** 2 escalas\n    *   **Preço:** EUR 1225.24\n\nQual desses te interessa mais, Lala? Ou quer que eu te ajude a comparar algum deles? 😊"
-      },
-      {
-        "type": "human",
-        "content": "compare o 1 e 5"
-      },
-      {
-        "type": "ai",
-        "content": "Ótima escolha, Lala! Vamos comparar o Voo 1 e o Voo 5 para você ver as diferenças lado a lado:\n\n---\n\n**Voo 1 (LATAM)**\n*   **Aeronave:** Airbus A321\n*   **Partida:** 17:00 (5 da tarde)\n*   **Chegada:** 06:00 (6 da manhã)\n*   **Duração Total:** 49 horas\n*   **Escalas:** 2 escalas\n*   **Preço:** EUR 1068.79 (aproximadamente R$ 6.977,00 com a cotação de R$ 6,53)\n\n**Voo 5 (LATAM)**\n*   **Aeronave:** Airbus A320\n*   **Partida:** 03:15 (3 e 15 da manhã)\n*   **Chegada:** 07:50 (7 e 50 da manhã)\n*   **Duração Total:** 40 horas e 35 minutos\n*   **Escalas:** 2 escalas\n*   **Preço:** EUR 1225.24\n\n---\n\n**Principais diferenças para você considerar, Lala:**\n\n*   **Preço:** O Voo 1 é mais barato, custando EUR 1068.79, enquanto o Voo 5 custa EUR 1225.24.\n*   **Duração:** O Voo 5 é significativamente mais rápido, com 40h35m de duração, comparado às 49h do Voo 1. São quase 8 horas e meia a menos de viagem!\n*   **Horário de Partida:** O Voo 1 parte no final da tarde (17:00), enquanto o Voo 5 parte de madrugada (03:15).\n*   **Horário de Chegada:** Ambos chegam pela manhã, mas o Voo 1 chega um pouco mais cedo (06:00) que o Voo 5 (07:50).\n*   **Aeronave:** O Voo 1 usa um Airbus A321 e o Voo 5 um Airbus A320. Ambos são aviões modernos e confortáveis para voos de longa distância.\n\nQual desses parece mais interessante para você, Lala, considerando o preço e a duração da viagem? 😊"
+        "content": "De nada, Maria! Fico feliz em ajudar com as dicas de pousadas mais tranquilas em Fortaleza.\n\nEntão, já temos algumas ideias de hospedagem para a sua viagem. Que tal voltarmos para as opções de voo para o dia **27 de agosto de 2025**?\n\nVocê gostaria de rever os detalhes daquele voo da Gol (o mais barato, mas que provavelmente exigiria a compra de bagagem à parte para suas duas malas), ou prefere que eu veja se as outras companhias (LATAM, Azul) têm alguma opção que talvez já inclua a bagagem, mesmo que o preço inicial seja um pouco diferente?\n\nOu, se preferir, posso te dar mais algumas dicas sobre o que fazer em Fortaleza durante seus 3 dias por lá! 😊"
       },
       {
         "type": "human",
