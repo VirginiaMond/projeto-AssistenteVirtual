@@ -59,8 +59,6 @@ python main.py
 
 ---
 ## Observações: 
-
-```
 O arquivo json pode ser limpado, é o local onde armazena-se a memória do assistente virtual temporariamente.
-```
+
 
